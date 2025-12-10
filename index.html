@@ -12,7 +12,369 @@
   <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-  <h1>Accueil</h1>
-  <p>Page d'accueil (placeholder).</p>
+    <!-- HEADER -->
+    <header class="header">
+      <a class="header__link" href="index.html">
+        <img class="header__logo" src="/assets/img/logo-echos-sonore.svg" alt="Logo du festival Echos Sonore" />
+      </a>
+    
+      <button class="header__menu-btn menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
+        <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
+        <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
+      </button>
+    
+      <nav class="header__menu menu" id="mainNav" hidden>
+        <ul class="menu__list u-list-unstyled">
+          <li class="menu__item">
+            <a class="menu__link menu__link--active" href="index.html">
+              Accueil
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="festival.html">
+              Le Festival
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="programme.html">
+              Programme
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="artistes.html">
+              Artistes
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="scenes.html">
+              Scènes
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="infos.html">
+              Infos pratiques
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contact.html">
+              Contact
+            </a>
+          </li>
+        </ul>
+    
+        <ul class="menu__social-list u-list-unstyled">
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="#" aria-label="Instagram">
+              Instagram
+            </a>
+          </li>
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="#" aria-label="Facebook">
+              Facebook
+            </a>
+          </li>
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="#" aria-label="TikTok">
+              TikTok
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero__media" aria-hidden="true">
+          <!-- image de fond gérée surtout en CSS, mais tu peux mettre une image si tu veux -->
+          <img class="hero__img" src="/assets/img/hero-festival.jpg" alt="" loading="lazy" />
+        </div>
+    
+        <div class="hero__content">
+          <p class="hero__festival-name">Echos Sonore –</p>
+          <h1 class="hero__title">
+            Festival reggae &amp; musiques actuelles
+          </h1>
+          <p class="hero__meta">
+            <span class="hero__dates">
+              28 &rarr; 31 octobre 2026
+            </span>
+            <span class="hero__place">
+              Audincourt (25)
+            </span>
+          </p>
+          <a class="btn hero__cta" href="#" aria-label="Accéder à la billetterie (fictive)">
+            Accéder à la billetterie
+          </a>
+        </div>
+      </section>
+    
+      <!-- INFOS CLÉS -->
+      <section class="section section--wrapper section--highlight">
+        <header class="section__header">
+          <h2 class="section__title u-sr-only">
+            Informations principales du festival
+          </h2>
+        </header>
+    
+        <article class="info-card">
+          <h3 class="info-card__title">
+            28 au 31 octobre 2026
+          </h3>
+          <ul class="info-card__list u-list-unstyled">
+            <li class="info-card__item">
+              <span class="info-card__icon" aria-hidden="true">🕓</span>
+              <span>
+                <strong>Ouverture des portes :</strong>
+                16h00
+              </span>
+            </li>
+            <li class="info-card__item">
+              <span class="info-card__icon" aria-hidden="true">🎵</span>
+              <span>
+                <strong>Concerts :</strong>
+                jusqu'à 0h30
+              </span>
+            </li>
+            <li class="info-card__item">
+              <span class="info-card__icon" aria-hidden="true">📍</span>
+              <span>
+                <strong>Lieu :</strong>
+                Site en plein air – Audincourt (25)
+              </span>
+            </li>
+            <li class="info-card__item">
+              <span class="info-card__icon" aria-hidden="true">👥</span>
+              <span>
+                <strong>Capacité :</strong>
+                jusqu'à 3 000 personnes / jour
+              </span>
+            </li>
+          </ul>
+        </article>
+      </section>
+    
+      <!-- LIENS PRINCIPAUX (Le festival, Programme, Artistes, Infos pratiques) -->
+      <section class="section section--wrapper section--nav-cards">
+        <header class="section__header">
+          <h2 class="section__title u-sr-only">
+            Explorer le festival
+          </h2>
+        </header>
+    
+        <ul class="u-list-unstyled nav-cards">
+          <li class="nav-card nav-card--festival">
+            <div class="nav-card__content">
+              <p class="nav-card__icon" aria-hidden="true">🎪</p>
+              <h3 class="nav-card__title">Le Festival</h3>
+              <p class="nav-card__text">
+                Un événement à taille humaine ancré dans l'écologie,
+                la convivialité et la créativité.
+              </p>
+            </div>
+            <a class="nav-card__btn btn btn--ghost" href="festival.html">
+              Découvrir
+            </a>
+          </li>
+    
+          <li class="nav-card nav-card--programme">
+            <div class="nav-card__content">
+              <p class="nav-card__icon" aria-hidden="true">🎶</p>
+              <h3 class="nav-card__title">Programme</h3>
+              <p class="nav-card__text">
+                Découvrez les artistes programmés chaque jour : roots,
+                dub, reggae fusion, world music.
+              </p>
+            </div>
+            <a class="nav-card__btn btn btn--ghost" href="programme.html">
+              Découvrir
+            </a>
+          </li>
+    
+          <li class="nav-card nav-card--artistes">
+            <div class="nav-card__content">
+              <p class="nav-card__icon" aria-hidden="true">🌟</p>
+              <h3 class="nav-card__title">Artistes</h3>
+              <p class="nav-card__text">
+                Accédez à la liste complète des artistes invités et
+                émergents.
+              </p>
+            </div>
+            <a class="nav-card__btn btn btn--ghost" href="artistes.html">
+              Découvrir
+            </a>
+          </li>
+    
+          <li class="nav-card nav-card--infos">
+            <div class="nav-card__content">
+              <p class="nav-card__icon" aria-hidden="true">📌</p>
+              <h3 class="nav-card__title">Infos pratiques</h3>
+              <p class="nav-card__text">
+                Transports, hébergements, tarifs et accessibilité pour
+                préparer votre venue.
+              </p>
+            </div>
+            <a class="nav-card__btn btn btn--ghost" href="infos.html">
+              Découvrir
+            </a>
+          </li>
+        </ul>
+      </section>
+    
+      <!-- VALEURS DU FESTIVAL -->
+      <section class="section section--wrapper section--values">
+        <header class="section__header">
+          <h2 class="section__title">
+            Valeurs du festival
+          </h2>
+        </header>
+    
+        <ul class="values u-list-unstyled">
+          <li class="values__item">
+            <span class="values__bullet" aria-hidden="true">✳</span>
+            <p>
+              <strong>Écologique</strong> – « festival responsable »
+            </p>
+          </li>
+          <li class="values__item">
+            <span class="values__bullet" aria-hidden="true">✳</span>
+            <p>
+              <strong>Convivial &amp; inclusif</strong> – « une grande famille »
+            </p>
+          </li>
+          <li class="values__item">
+            <span class="values__bullet" aria-hidden="true">✳</span>
+            <p>
+              <strong>Créatif &amp; surprenant</strong> – « programmation
+              audacieuse »
+            </p>
+          </li>
+        </ul>
+      </section>
+    
+      <!-- PARTENAIRES (CAROUSEL) -->
+      <section class="section section--wrapper section--partners">
+        <header class="section__header">
+          <h2 class="section__title">
+            Nos partenaires
+          </h2>
+        </header>
+    
+        <div class="carousel partners-carousel" aria-label="Carrousel des partenaires">
+          <div class="carousel__track-wrapper">
+            <button class="carousel__button carousel__button--prev" type="button" aria-label="Partenaire précédent">
+              ‹
+            </button>
+    
+            <div class="carousel__viewport">
+              <ul class="carousel__track u-list-unstyled">
+                <li class="carousel__slide partners-carousel__slide">
+                  <img class="partners-carousel__logo" src="/assets/img/partenaires/partner-01.png"
+                    alt="Logo du partenaire 1" loading="lazy" />
+                </li>
+                <li class="carousel__slide partners-carousel__slide">
+                  <img class="partners-carousel__logo" src="/assets/img/partenaires/partner-02.png"
+                    alt="Logo du partenaire 2" loading="lazy" />
+                </li>
+                <li class="carousel__slide partners-carousel__slide">
+                  <img class="partners-carousel__logo" src="/assets/img/partenaires/partner-03.png"
+                    alt="Logo du partenaire 3" loading="lazy" />
+                </li>
+                <li class="carousel__slide partners-carousel__slide">
+                  <img class="partners-carousel__logo" src="/assets/img/partenaires/partner-04.png"
+                    alt="Logo du partenaire 4" loading="lazy" />
+                </li>
+              </ul>
+            </div>
+    
+            <button class="carousel__button carousel__button--next" type="button" aria-label="Partenaire suivant">
+              ›
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__top">
+        <nav class="footer__nav">
+          <ul class="footer__list u-list-unstyled">
+            <li class="footer__item">
+              <a class="footer__link" href="index.html">Accueil</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="festival.html">Le Festival</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="programme.html">Programme</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="artistes.html">Artistes</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="scenes.html">Scènes</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="infos.html">Infos pratiques</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+    
+        <div class="footer__contact">
+          <h2 class="footer__title">Contact</h2>
+          <p>
+            Email :
+            <a class="footer__link" href="mailto:contact@echossonore.fr">
+              contact@echossonore.fr
+            </a>
+          </p>
+          <p>
+            Téléphone :
+            <a class="footer__link" href="tel:0715153681">
+              07&nbsp;15&nbsp;15&nbsp;36&nbsp;81
+            </a>
+          </p>
+          <p>
+            Adresse :
+            Rue du Dalse, 25400 Audincourt
+          </p>
+        </div>
+    
+        <div class="footer__social">
+          <h2 class="footer__title">Réseaux sociaux</h2>
+          <ul class="footer__social-list u-list-unstyled">
+            <li>
+              <a class="footer__link" href="#" aria-label="Instagram">
+                <img src="/assets/icons/instagram.svg" alt="" class="footer__social-icon" loading="lazy" />
+              </a>
+            </li>
+            <li>
+              <a class="footer__link" href="#" aria-label="Facebook">
+                <img src="/assets/icons/facebook.svg" alt="" class="footer__social-icon" loading="lazy" />
+              </a>
+            </li>
+            <li>
+              <a class="footer__link" href="#" aria-label="TikTok">
+                <img src="/assets/icons/tiktok.svg" alt="" class="footer__social-icon" loading="lazy" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    
+      <p class="footer__legal">
+        &copy; 2026 Echos Sonore – Projet étudiant. Site fictif réalisé dans le
+        cadre de la SAE 105 – BUT MMI Montbéliard.
+      </p>
+    </footer>
+
+  <script type="module" src="src/js/menu.js"></script>
+  <script type="module" src="src/js/carousel.js"></script>
+  <script type="module" src="src/js/faq.js"></script>
+  <script type="module" src="src/js/search.js"></script>
 </body>
 </html>

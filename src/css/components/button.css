@@ -1,3 +1,20 @@
-/* Boutons */
-.btn{display:inline-block;padding:.6rem 1rem;border-radius:6px;background:#0b74de;color:#fff;text-decoration:none}
-.btn--ghost{background:transparent;border:1px solid #0b74de;color:#0b74de}
+/* ==========================
+   BOUTON ENVOYER
+========================== */
+
+.contact-form__submit {
+    width: 100%;
+    background-color: var(--Rougevif);
+    color: var(--blanc);
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+
+    font-size: var(--text-lg);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.contact-form__submit:hover {
+    opacity: 0.9;
+}

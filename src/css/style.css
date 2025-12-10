@@ -11,7 +11,7 @@
 
 /* Styles de base : tags HTML et media queries globales */
 @import "base/main.css";
-@import "base/media.css";
+@import "base/page.css";
 
 /* Layout commun (header, footer, sections, grilles) */
 @import "layout/header.css";

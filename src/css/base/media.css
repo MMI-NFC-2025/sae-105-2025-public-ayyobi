@@ -1,0 +1,3 @@
+/* Styles médias (images, vidéos, iframes...) */
+img,video,iframe{max-width:100%;height:auto;display:block}
+.media-wrapper{position:relative;overflow:hidden}

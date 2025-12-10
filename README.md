@@ -3,11 +3,11 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
+- NOM :AYYOBI
+- PRÉNOM :NARGIS
+- GROUPE :A1
 - URL du site :
-- URL FIGMA :
+- URL FIGMA :https://www.figma.com/design/cwuohaQuZkKo9zK2eW6E8b/SAE105?node-id=1-2&t=KGVqYfwvbQ5WbpxI-1
 
 ## Sujet
 

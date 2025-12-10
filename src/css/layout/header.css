@@ -1,0 +1,3 @@
+/* Header + navigation */
+.header{background:#fff;border-bottom:1px solid #eee}
+.nav{display:flex;gap:1rem;align-items:center}

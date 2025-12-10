@@ -1,0 +1,3 @@
+/* Bloc FAQ accordéon */
+.faq__item{border-bottom:1px solid #eee;padding:.75rem 0}
+.faq__question{cursor:pointer}

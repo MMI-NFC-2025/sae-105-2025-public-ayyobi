@@ -1,0 +1,3 @@
+/* Cartes équipe / organisateurs */
+.user-card{display:flex;gap:1rem;align-items:center}
+.user-card__meta{font-size:.9rem;color:#666}

@@ -1,0 +1,6 @@
+/* Variables (couleurs, typos, espacements) */
+:root{
+  --color-primary:#0b74de;
+  --color-accent:#ff7a3b;
+  --gap:1rem;
+}

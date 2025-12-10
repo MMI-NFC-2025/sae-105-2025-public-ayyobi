@@ -12,8 +12,220 @@
   <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-  <h1>Festival — À propos</h1>
-  <p>Page placeholder pour le festival.</p>
+    <!-- HEADER -->
+    <header class="header">
+      <a class="header__link" href="index.html">
+        <img class="header__logo" src="/assets/img/logo-echos-sonore.svg" alt="Logo du festival Echos Sonore" />
+      </a>
+    
+      <button class="header__menu-btn menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
+        <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
+        <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
+      </button>
+    
+      <nav class="header__menu menu" id="mainNav" hidden>
+        <ul class="menu__list u-list-unstyled">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Accueil</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--active" href="festival.html">
+              Le Festival
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="programme.html">Programme</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="artistes.html">Artistes</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="scenes.html">Scènes</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="infos.html">Infos pratiques</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+    
+        <ul class="menu__social-list u-list-unstyled">
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="#" aria-label="Instagram">
+              Instagram
+            </a>
+          </li>
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="#" aria-label="Facebook">
+              Facebook
+            </a>
+          </li>
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="#" aria-label="TikTok">
+              TikTok
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <!-- HERO IMAGE (FEU D'ARTIFICE) -->
+      <section class="festival-hero">
+        <img class="festival-hero__img" src="/assets/img/festival/fireworks-hero.jpg"
+          alt="Feu d'artifice au-dessus d'une scène de concert" loading="lazy" />
+      </section>
+    
+      <!-- CONTENU LE FESTIVAL -->
+      <section class="section section--wrapper festival">
+        <header class="section__header festival__header">
+          <h1 class="section__title festival__title">
+            Le Festival
+          </h1>
+        </header>
+    
+        <div class="festival__content">
+          <p>
+            Echos Sonore est un nouveau festival de musiques actuelles
+            dédié à la culture reggae. L’édition inaugurale se déroulera
+            du 28 au 31 octobre 2026, à Audincourt, sur un site en plein
+            air pouvant accueillir jusqu’à 3&nbsp;000 personnes par jour.
+          </p>
+    
+          <p>
+            Conçu comme un rendez-vous automnal pendant les vacances
+            universitaires, le festival propose une ambiance immersive
+            inspirée d’Halloween, mêlant lumières, décors et scénographie
+            nocturne.
+          </p>
+    
+          <p>
+            Le festival veut offrir une expérience conviviale, à taille
+            humaine, où se rencontrent artistes, public, innovation locale
+            et engagement citoyen.
+          </p>
+        </div>
+      </section>
+    
+      <!-- NOS VALEURS -->
+      <section class="section section--wrapper festival-values">
+        <header class="section__header">
+          <h2 class="section__title">
+            Nos valeurs
+          </h2>
+        </header>
+    
+        <div class="festival-values__grid">
+          <article class="value-card value-card--eco">
+            <h3 class="value-card__title">Écologique</h3>
+            <p class="value-card__text">
+              Tri, énergies propres, circuits courts, actions solidaires
+              et réduction de l’empreinte carbone du festival.
+            </p>
+          </article>
+    
+          <article class="value-card value-card--convivial">
+            <h3 class="value-card__title">Convivial &amp; inclusif</h3>
+            <p class="value-card__text">
+              Un événement à taille humaine, accessible, où chacun peut
+              se sentir à sa place : public, bénévoles, artistes et
+              partenaires locaux.
+            </p>
+          </article>
+    
+          <article class="value-card value-card--creative">
+            <h3 class="value-card__title">Créatif &amp; surprenant</h3>
+            <p class="value-card__text">
+              Talents émergents, fusions musicales, scénographie unique
+              et expériences artistiques inattendues.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__top">
+        <nav class="footer__nav">
+          <ul class="footer__list u-list-unstyled">
+            <li class="footer__item">
+              <a class="footer__link" href="index.html">Accueil</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="festival.html">Le Festival</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="programme.html">Programme</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="artistes.html">Artistes</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="scenes.html">Scènes</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="infos.html">Infos pratiques</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+    
+        <div class="footer__contact">
+          <h2 class="footer__title">Contact</h2>
+          <p>
+            Email :
+            <a class="footer__link" href="mailto:contact@echossonore.fr">
+              contact@echossonore.fr
+            </a>
+          </p>
+          <p>
+            Téléphone :
+            <a class="footer__link" href="tel:0715153681">
+              07&nbsp;15&nbsp;15&nbsp;36&nbsp;81
+            </a>
+          </p>
+          <p>
+            Adresse :
+            Rue du Dalse, 25400 Audincourt
+          </p>
+        </div>
+    
+        <div class="footer__social">
+          <h2 class="footer__title">Réseaux sociaux</h2>
+          <ul class="footer__social-list u-list-unstyled">
+            <li>
+              <a class="footer__link" href="#" aria-label="Facebook">
+                <img src="/assets/icons/facebook.svg" alt="" class="footer__social-icon" loading="lazy" />
+              </a>
+            </li>
+            <li>
+              <a class="footer__link" href="#" aria-label="Instagram">
+                <img src="/assets/icons/instagram.svg" alt="" class="footer__social-icon" loading="lazy" />
+              </a>
+            </li>
+            <li>
+              <a class="footer__link" href="#" aria-label="YouTube">
+                <img src="/assets/icons/youtube.svg" alt="" class="footer__social-icon" loading="lazy" />
+              </a>
+            </li>
+            <li>
+              <a class="footer__link" href="#" aria-label="TikTok">
+                <img src="/assets/icons/tiktok.svg" alt="" class="footer__social-icon" loading="lazy" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    
+      <p class="footer__legal">
+        &copy; 2026 Echos Sonore – Projet étudiant. Site fictif réalisé dans le
+        cadre de la SAE 105 – BUT MMI Montbéliard.
+      </p>
+    </footer>
   <script type="module" src="src/js/menu.js"></script>
   <script type="module" src="src/js/carousel.js"></script>
   <script type="module" src="src/js/faq.js"></script>

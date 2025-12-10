@@ -1,6 +1,35 @@
 /* Variables (couleurs, typos, espacements) */
 :root{
-  --color-primary:#0b74de;
-  --color-accent:#ff7a3b;
-  --gap:1rem;
+    /* Couleurs */
+        --Rouge: #7a1511;
+        --Rougevif: #da261c;
+        --Bleulectrique: #0c1e5b;
+        --Noirbleunuit: #030624;
+        --blanc: #ffffff;
+    
+    /* Tailles de texte */
+        --text_sm: 14;
+        --text_base: 16;
+        --text_lg: 18;
+        --text_xl: 20;
+        --text_2xl: 24;
+        --text_3xl: 30;
+        --text_4xl: 36;
+        --text_5xl: 48;
+        --text_6xl: 60;
+        --text_7xl: 72;
+
+    /* Polices de caractère */
+        --font-sans: "Inter", sans-serif;
+        --font_sans:"Montserrat",sans-serif;
+    
+
+    /* Espaces */
+        --spaceunit: 4;
+        --spacebase: 4;
+        --spacesm: 2;
+        --spacemd: 8;
+        --spacelg: 12;
+        --spacexl: 0;
+    
 }

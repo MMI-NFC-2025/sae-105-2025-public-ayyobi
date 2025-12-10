@@ -1,3 +1,21 @@
 /* Footer */
-.footer{padding:2rem 1rem;background:#f8f8f8;border-top:1px solid #eee}
-.footer .site-map{display:flex;gap:1rem;flex-wrap:wrap}
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+.footer__top{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    background-image:url('../../../assets/img/bg-footer.avif');
+    background-size:cover;
+    background-position:center;
+    padding: 10%;
+
+}
+.footer__legal{
+    padding: 0.5rem 1rem; 
+    background-color: var(--Rougevif);
+    text-align: center;
+}

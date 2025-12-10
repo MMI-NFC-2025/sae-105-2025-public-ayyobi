@@ -12,8 +12,232 @@
   <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-  <h1>Liste des scènes</h1>
-  <p>Page placeholder pour la liste des scènes.</p>
+<!-- HEADER -->
+    <header class="header">
+      <a class="header__link" href="index.html">
+        <img
+          class="header__logo"
+          src="/assets/img/logo-echos-sonore.svg"
+          alt="Logo du festival Echos Sonore" />
+      </a>
+
+      <button
+        class="header__menu-btn menu-btn"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="mainNav">
+        <span
+          class="menu-btn__bar menu-btn__bar--top"
+          aria-hidden="true"></span>
+        <span
+          class="menu-btn__bar menu-btn__bar--bottom"
+          aria-hidden="true"></span>
+      </button>
+
+      <nav class="header__menu menu" id="mainNav" hidden>
+        <ul class="menu__list u-list-unstyled">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Accueil</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="festival.html">Le Festival</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="programme.html">Programme</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="artistes.html">Artistes</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--active" href="scenes.html">
+              Scènes
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="infos.html">Infos pratiques</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <ul class="menu__social-list u-list-unstyled">
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="#" aria-label="Instagram">
+              Instagram
+            </a>
+          </li>
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="#" aria-label="Facebook">
+              Facebook
+            </a>
+          </li>
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="#" aria-label="TikTok">
+              TikTok
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section section--wrapper scenes">
+        <header class="section__header scenes__header">
+          <h1 class="section__title scenes__title">
+            Les Scènes du Echos Sonores
+          </h1>
+        </header>
+
+        <ul class="scenes-list u-list-unstyled">
+          <!-- Scène Roots -->
+          <li class="scenes-list__item">
+            <article class="scene-card">
+              <a class="scene-card__link" href="scene.html">
+                <img
+                  class="scene-card__img"
+                  src="/assets/img/scenes/scene-roots.jpg"
+                  alt="Scène Roots du festival Echos Sonore"
+                  loading="lazy" />
+                <div class="scene-card__label">
+                  Scène Roots
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <!-- Scène Dub -->
+          <li class="scenes-list__item">
+            <article class="scene-card">
+              <a class="scene-card__link" href="scene.html">
+                <img
+                  class="scene-card__img"
+                  src="/assets/img/scenes/scene-dub.jpg"
+                  alt="Scène Dub du festival Echos Sonore"
+                  loading="lazy" />
+                <div class="scene-card__label">
+                  Scène Dub
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <!-- Scène Fusion -->
+          <li class="scenes-list__item">
+            <article class="scene-card">
+              <a class="scene-card__link" href="scene.html">
+                <img
+                  class="scene-card__img"
+                  src="/assets/img/scenes/scene-fusion.jpg"
+                  alt="Scène Fusion du festival Echos Sonore"
+                  loading="lazy" />
+                <div class="scene-card__label">
+                  Scène Fusion
+                </div>
+              </a>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__top">
+        <nav class="footer__nav">
+          <ul class="footer__list u-list-unstyled">
+            <li class="footer__item">
+              <a class="footer__link" href="index.html">Accueil</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="festival.html">Le Festival</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="programme.html">Programme</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="artistes.html">Artistes</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="scenes.html">Scènes</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="infos.html">Infos pratiques</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="footer__contact">
+          <h2 class="footer__title">Contact</h2>
+          <p>
+            Email :
+            <a class="footer__link" href="mailto:contact@echossonore.fr">
+              contact@echossonore.fr
+            </a>
+          </p>
+          <p>
+            Téléphone :
+            <a class="footer__link" href="tel:0715153681">
+              07&nbsp;15&nbsp;15&nbsp;36&nbsp;81
+            </a>
+          </p>
+          <p>
+            Adresse :
+            Rue du Dalse, 25400 Audincourt
+          </p>
+        </div>
+
+        <div class="footer__social">
+          <h2 class="footer__title">Réseaux sociaux</h2>
+          <ul class="footer__social-list u-list-unstyled">
+            <li>
+              <a class="footer__link" href="#" aria-label="Facebook">
+                <img
+                  src="/assets/icons/facebook.svg"
+                  alt=""
+                  class="footer__social-icon"
+                  loading="lazy" />
+              </a>
+            </li>
+            <li>
+              <a class="footer__link" href="#" aria-label="Instagram">
+                <img
+                  src="/assets/icons/instagram.svg"
+                  alt=""
+                  class="footer__social-icon"
+                  loading="lazy" />
+              </a>
+            </li>
+            <li>
+              <a class="footer__link" href="#" aria-label="YouTube">
+                <img
+                  src="/assets/icons/youtube.svg"
+                  alt=""
+                  class="footer__social-icon"
+                  loading="lazy" />
+              </a>
+            </li>
+            <li>
+              <a class="footer__link" href="#" aria-label="TikTok">
+                <img
+                  src="/assets/icons/tiktok.svg"
+                  alt=""
+                  class="footer__social-icon"
+                  loading="lazy" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer__legal">
+        &copy; 2026 Echos Sonore – Projet étudiant. Site fictif réalisé dans le
+        cadre de la SAE 105 – BUT MMI Montbéliard.
+      </p>
+    </footer>
   <script type="module" src="src/js/menu.js"></script>
   <script type="module" src="src/js/carousel.js"></script>
   <script type="module" src="src/js/faq.js"></script>

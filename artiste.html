@@ -12,8 +12,212 @@
   <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-  <h1>Page artiste (template)</h1>
-  <p>Placeholder pour la page de détail d'un artiste.</p>
+    <!-- HEADER -->
+    <header class="header">
+      <a class="header__link" href="index.html">
+        <img class="header__logo" src="/assets/img/logo-echos-sonore.svg" alt="Logo du festival Echos Sonore" />
+      </a>
+    
+      <button class="header__menu-btn menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
+        <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
+        <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
+      </button>
+    
+      <nav class="header__menu menu" id="mainNav" hidden>
+        <ul class="menu__list u-list-unstyled">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Accueil</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="festival.html">Le Festival</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="programme.html">Programme</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="artistes.html">Artistes</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="scenes.html">Scènes</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="infos.html">Infos pratiques</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+    
+        <ul class="menu__social-list u-list-unstyled">
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="#" aria-label="Instagram">
+              Instagram
+            </a>
+          </li>
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="#" aria-label="Facebook">
+              Facebook
+            </a>
+          </li>
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="#" aria-label="TikTok">
+              TikTok
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main class="artist-page">
+      <!-- HERO + BOUTON RETOUR -->
+      <section class="artist-page__hero">
+        <button class="artist-page__back-btn" type="button" onclick="window.history.back()">
+          <span aria-hidden="true">←</span>
+          <span class="u-sr-only">Retour à la liste des artistes</span>
+        </button>
+    
+        <img class="artist-page__hero-img" src="/assets/img/artistes/jah-roots-collective-hero.jpg"
+          alt="Jah Roots Collective sur scène" loading="lazy" />
+      </section>
+    
+      <!-- INFOS ARTISTE -->
+      <section class="section section--wrapper artist-page__info">
+        <header class="artist-page__header">
+          <h1 class="artist-page__name">
+            Jah Roots Collective
+          </h1>
+        </header>
+    
+        <p class="artist-page__meta">
+          <span class="artist-page__date">
+            28 octobre — 20h30
+          </span>
+          <br />
+          <span class="artist-page__scene">
+            Scène Roots
+          </span>
+        </p>
+    
+        <p class="artist-page__bio">
+          Jah Roots Collective est un groupe franco-caribéen mêlant reggae
+          roots, groove et instruments traditionnels. Leur musique transmet
+          un message de paix, de spiritualité et d’unité, fidèle aux racines
+          du mouvement reggae. Leur performance promet une ambiance
+          chaleureuse et authentique.
+        </p>
+      </section>
+    
+      <!-- GALERIE PHOTOS -->
+      <section class="section section--wrapper artist-page__gallery">
+        <h2 class="u-sr-only">Galerie photo de Jah Roots Collective</h2>
+    
+        <div class="artist-gallery">
+          <figure class="artist-gallery__item">
+            <img class="artist-gallery__img" src="/assets/img/artistes/jah-roots-collective-live-1.jpg"
+              alt="Jah Roots Collective en concert avec clavier et chanteur" loading="lazy" />
+          </figure>
+    
+          <figure class="artist-gallery__item">
+            <img class="artist-gallery__img" src="/assets/img/artistes/jah-roots-collective-live-2.jpg"
+              alt="Public en fête pendant le concert de Jah Roots Collective" loading="lazy" />
+          </figure>
+    
+          <figure class="artist-gallery__item">
+            <img class="artist-gallery__img" src="/assets/img/artistes/jah-roots-collective-live-3.jpg"
+              alt="Groupe Jah Roots Collective sur scène avec batterie et guitare" loading="lazy" />
+          </figure>
+        </div>
+      </section>
+    
+      <!-- CTA PROGRAMME -->
+      <section class="section section--wrapper artist-page__cta">
+        <a class="btn artist-page__program-btn" href="programme.html">
+          Voir le programme complet
+        </a>
+      </section>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__top">
+        <nav class="footer__nav">
+          <ul class="footer__list u-list-unstyled">
+            <li class="footer__item">
+              <a class="footer__link" href="index.html">Accueil</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="festival.html">Le Festival</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="programme.html">Programme</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="artistes.html">Artistes</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="scenes.html">Scènes</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="infos.html">Infos pratiques</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+    
+        <div class="footer__contact">
+          <h2 class="footer__title">Contact</h2>
+          <p>
+            Email :
+            <a class="footer__link" href="mailto:contact@echossonore.fr">
+              contact@echossonore.fr
+            </a>
+          </p>
+          <p>
+            Téléphone :
+            <a class="footer__link" href="tel:0715153681">
+              07&nbsp;15&nbsp;15&nbsp;36&nbsp;81
+            </a>
+          </p>
+          <p>
+            Adresse :
+            Rue du Dalse, 25400 Audincourt
+          </p>
+        </div>
+    
+        <div class="footer__social">
+          <h2 class="footer__title">Réseaux sociaux</h2>
+          <ul class="footer__social-list u-list-unstyled">
+            <li>
+              <a class="footer__link" href="#" aria-label="Facebook">
+                <img src="/assets/icons/facebook.svg" alt="" class="footer__social-icon" loading="lazy" />
+              </a>
+            </li>
+            <li>
+              <a class="footer__link" href="#" aria-label="Instagram">
+                <img src="/assets/icons/instagram.svg" alt="" class="footer__social-icon" loading="lazy" />
+              </a>
+            </li>
+            <li>
+              <a class="footer__link" href="#" aria-label="YouTube">
+                <img src="/assets/icons/youtube.svg" alt="" class="footer__social-icon" loading="lazy" />
+              </a>
+            </li>
+            <li>
+              <a class="footer__link" href="#" aria-label="TikTok">
+                <img src="/assets/icons/tiktok.svg" alt="" class="footer__social-icon" loading="lazy" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    
+      <p class="footer__legal">
+        &copy; 2026 Echos Sonore – Projet étudiant. Site fictif réalisé dans le
+        cadre de la SAE 105 – BUT MMI Montbéliard.
+      </p>
+    </footer>
   <script type="module" src="src/js/menu.js"></script>
   <script type="module" src="src/js/carousel.js"></script>
   <script type="module" src="src/js/faq.js"></script>

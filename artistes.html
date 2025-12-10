@@ -12,8 +12,320 @@
   <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-  <h1>Liste des artistes</h1>
-  <p>Page placeholder pour la liste des artistes.</p>
+    <!-- HEADER -->
+    <header class="header">
+      <a class="header__link" href="index.html">
+        <img class="header__logo" src="/assets/img/logo-echos-sonore.svg" alt="Logo du festival Echos Sonore" />
+      </a>
+    
+      <button class="header__menu-btn menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
+        <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
+        <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
+      </button>
+    
+      <nav class="header__menu menu" id="mainNav" hidden>
+        <ul class="menu__list u-list-unstyled">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Accueil</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="festival.html">Le Festival</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="programme.html">Programme</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--active" href="artistes.html">
+              Artistes
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="scenes.html">Scènes</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="infos.html">Infos pratiques</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+    
+        <ul class="menu__social-list u-list-unstyled">
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="#" aria-label="Instagram">
+              Instagram
+            </a>
+          </li>
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="#" aria-label="Facebook">
+              Facebook
+            </a>
+          </li>
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="#" aria-label="TikTok">
+              TikTok
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <!-- INTRO ARTISTES -->
+      <section class="section section--wrapper artists">
+        <header class="section__header artists__header">
+          <h1 class="section__title artists__title">
+            Les artistes
+          </h1>
+        </header>
+    
+        <p class="artists__intro">
+          Découvrez les artistes programmés sur les 4 jours du festival Echos
+          Sonore&nbsp;: roots, dub, reggae fusion et musiques du monde.
+        </p>
+    
+        <!-- LISTE D'ARTISTES -->
+        <ul class="artists-list u-list-unstyled">
+          <!-- Artiste 1 -->
+          <li class="artists-list__item">
+            <article class="artist-card">
+              <a class="artist-card__link" href="artiste.html">
+                <div class="artist-card__media-wrapper">
+                  <img class="artist-card__img" src="/assets/img/artistes/jah-roots-collective.jpg"
+                    alt="Jah Roots Collective sur scène" loading="lazy" />
+                </div>
+                <div class="artist-card__content">
+                  <h2 class="artist-card__name">
+                    Jah Roots Collective
+                  </h2>
+                  <p class="artist-card__date">
+                    28 octobre — 20h30
+                  </p>
+                  <p class="artist-card__scene">
+                    Scène Roots
+                  </p>
+                </div>
+                <span class="artist-card__cta" aria-hidden="true">
+                  →
+                </span>
+              </a>
+            </article>
+          </li>
+    
+          <!-- Artiste 2 -->
+          <li class="artists-list__item">
+            <article class="artist-card">
+              <a class="artist-card__link" href="artiste.html">
+                <div class="artist-card__media-wrapper">
+                  <img class="artist-card__img" src="/assets/img/artistes/bassline-dub-system.jpg"
+                    alt="BassLine Dub System en concert" loading="lazy" />
+                </div>
+                <div class="artist-card__content">
+                  <h2 class="artist-card__name">
+                    BassLine Dub System
+                  </h2>
+                  <p class="artist-card__date">
+                    29 octobre — 22h00
+                  </p>
+                  <p class="artist-card__scene">
+                    Scène Dub
+                  </p>
+                </div>
+                <span class="artist-card__cta" aria-hidden="true">
+                  →
+                </span>
+              </a>
+            </article>
+          </li>
+    
+          <!-- Artiste 3 -->
+          <li class="artists-list__item">
+            <article class="artist-card">
+              <a class="artist-card__link" href="artiste.html">
+                <div class="artist-card__media-wrapper">
+                  <img class="artist-card__img" src="/assets/img/artistes/naya-the-vibrations.jpg"
+                    alt="Naya &amp; The Vibrations en concert" loading="lazy" />
+                </div>
+                <div class="artist-card__content">
+                  <h2 class="artist-card__name">
+                    Naya &amp; The Vibrations
+                  </h2>
+                  <p class="artist-card__date">
+                    30 octobre — 19h00
+                  </p>
+                  <p class="artist-card__scene">
+                    Scène Fusion
+                  </p>
+                </div>
+                <span class="artist-card__cta" aria-hidden="true">
+                  →
+                </span>
+              </a>
+            </article>
+          </li>
+    
+          <!-- Artiste 4 -->
+          <li class="artists-list__item">
+            <article class="artist-card">
+              <a class="artist-card__link" href="artiste.html">
+                <div class="artist-card__media-wrapper">
+                  <img class="artist-card__img" src="/assets/img/artistes/zion-pulse.jpg" alt="Zion Pulse sur scène"
+                    loading="lazy" />
+                </div>
+                <div class="artist-card__content">
+                  <h2 class="artist-card__name">
+                    Zion Pulse
+                  </h2>
+                  <p class="artist-card__date">
+                    31 octobre — 21h00
+                  </p>
+                  <p class="artist-card__scene">
+                    Scène Roots
+                  </p>
+                </div>
+                <span class="artist-card__cta" aria-hidden="true">
+                  →
+                </span>
+              </a>
+            </article>
+          </li>
+    
+          <!-- Artiste 5 -->
+          <li class="artists-list__item">
+            <article class="artist-card">
+              <a class="artist-card__link" href="artiste.html">
+                <div class="artist-card__media-wrapper">
+                  <img class="artist-card__img" src="/assets/img/artistes/mystic-echoes.jpg" alt="Mystic Echoes en live"
+                    loading="lazy" />
+                </div>
+                <div class="artist-card__content">
+                  <h2 class="artist-card__name">
+                    Mystic Echoes
+                  </h2>
+                  <p class="artist-card__date">
+                    29 octobre — 18h30
+                  </p>
+                  <p class="artist-card__scene">
+                    Scène Dub
+                  </p>
+                </div>
+                <span class="artist-card__cta" aria-hidden="true">
+                  →
+                </span>
+              </a>
+            </article>
+          </li>
+    
+          <!-- Artiste 6 -->
+          <li class="artists-list__item">
+            <article class="artist-card">
+              <a class="artist-card__link" href="artiste.html">
+                <div class="artist-card__media-wrapper">
+                  <img class="artist-card__img" src="/assets/img/artistes/kora-sunlight.jpg" alt="Kora Sunlight en concert"
+                    loading="lazy" />
+                </div>
+                <div class="artist-card__content">
+                  <h2 class="artist-card__name">
+                    Kora Sunlight (World reggae fusion)
+                  </h2>
+                  <p class="artist-card__date">
+                    30 octobre — 17h00
+                  </p>
+                  <p class="artist-card__scene">
+                    Scène Fusion
+                  </p>
+                </div>
+                <span class="artist-card__cta" aria-hidden="true">
+                  →
+                </span>
+              </a>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__top">
+        <nav class="footer__nav">
+          <ul class="footer__list u-list-unstyled">
+            <li class="footer__item">
+              <a class="footer__link" href="index.html">Accueil</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="festival.html">Le Festival</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="programme.html">Programme</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="artistes.html">Artistes</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="scenes.html">Scènes</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="infos.html">Infos pratiques</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+    
+        <div class="footer__contact">
+          <h2 class="footer__title">Contact</h2>
+          <p>
+            Email :
+            <a class="footer__link" href="mailto:contact@echossonore.fr">
+              contact@echossonore.fr
+            </a>
+          </p>
+          <p>
+            Téléphone :
+            <a class="footer__link" href="tel:0715153681">
+              07&nbsp;15&nbsp;15&nbsp;36&nbsp;81
+            </a>
+          </p>
+          <p>
+            Adresse :
+            Rue du Dalse, 25400 Audincourt
+          </p>
+        </div>
+    
+        <div class="footer__social">
+          <h2 class="footer__title">Réseaux sociaux</h2>
+          <ul class="footer__social-list u-list-unstyled">
+            <li>
+              <a class="footer__link" href="#" aria-label="Facebook">
+                <img src="/assets/icons/facebook.svg" alt="" class="footer__social-icon" loading="lazy" />
+              </a>
+            </li>
+            <li>
+              <a class="footer__link" href="#" aria-label="Instagram">
+                <img src="/assets/icons/instagram.svg" alt="" class="footer__social-icon" loading="lazy" />
+              </a>
+            </li>
+            <li>
+              <a class="footer__link" href="#" aria-label="YouTube">
+                <img src="/assets/icons/youtube.svg" alt="" class="footer__social-icon" loading="lazy" />
+              </a>
+            </li>
+            <li>
+              <a class="footer__link" href="#" aria-label="TikTok">
+                <img src="/assets/icons/tiktok.svg" alt="" class="footer__social-icon" loading="lazy" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    
+      <p class="footer__legal">
+        &copy; 2026 Echos Sonore – Projet étudiant. Site fictif réalisé dans le
+        cadre de la SAE 105 – BUT MMI Montbéliard.
+      </p>
+    </footer>
   <script type="module" src="src/js/menu.js"></script>
   <script type="module" src="src/js/carousel.js"></script>
   <script type="module" src="src/js/faq.js"></script>

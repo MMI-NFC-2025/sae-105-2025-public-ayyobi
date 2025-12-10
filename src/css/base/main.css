@@ -1,4 +1,185 @@
-/* Styles globaux */
-:root{}
-html,body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.4;color:#111}
-h1,h2,h3{margin:0 0 .5rem}
+/* ==========================
+   RESET SIMPLE
+========================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    background-color: var(--Noirbleunuit);
+    color: var(--blanc);
+    font-family: var(--font-main);
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+/* ==========================
+   LIENS
+========================== */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover,
+a:focus {
+    opacity: 0.85;
+}
+
+/* ==========================
+   TITRES
+========================== */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: var(--text-3xl);
+}
+
+h2 {
+    font-size: var(--text-2xl);
+}
+
+h3 {
+    font-size: var(--text-xl);
+}
+
+/* ==========================
+   IMAGES
+========================== */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+
+/* ==========================
+   LISTES
+========================== */
+ul,
+li {
+    list-style: none;
+}
+
+/* ==========================
+   WRAPPER GLOBAL
+========================== */
+.section--wrapper {
+    width: 100%;
+    max-width: 480px;
+    /* mobile */
+    margin-inline: auto;
+    padding-inline: var(--space-xl);
+    padding-block: calc(var(--space-2xl) * 1.5);
+}
+
+/* ==========================
+   TITRES DE SECTION
+========================== */
+.section__title {
+    margin-bottom: var(--space-2xl);
+}
+
+/* ==========================
+   BOUTONS GÉNÉRIQUES
+========================== */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: var(--text-base);
+    background-color: var(--rougevif);
+    color: var(--blanc);
+    border: none;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: 0.9;
+}
+
+/* Variante bouton clair */
+.btn--light {
+    background-color: var(--blanc);
+    color: var(--rougevif);
+}
+
+/* Variante bouton transparent */
+.btn--ghost {
+    background-color: transparent;
+    border: 1px solid var(--blanc);
+}
+
+/* ==========================
+   FORMULAIRES (inputs / textarea)
+========================== */
+input,
+textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--rougevif);
+    background-color: var(--bleu-electrique);
+    color: var(--blanc);
+    font-size: var(--text-base);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--blanc);
+    font-weight: 500;
+}
+
+/* ==========================
+   ACCESSIBILITÉ
+========================== */
+.u-sr-only {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ==========================
+   ESPACEMENTS UTILS
+========================== */
+.u-mb-sm {
+    margin-bottom: var(--space-sm);
+}
+
+.u-mb-md {
+    margin-bottom: var(--space-md);
+}
+
+.u-mb-lg {
+    margin-bottom: var(--space-lg);
+}
+
+.u-mb-xl {
+    margin-bottom: var(--space-2xl);
+}

@@ -1,13 +1,25 @@
-/* Entrée principale : importer les modules CSS */
+/* Point d'entree : assemble tous les blocs CSS utilises sur les pages */
+
+/* Reset / normalisation */
 @import "vendors/normalize.css";
+
+/* Variables et tokens (couleurs, typo, espacements) */
 @import "utils/variables.css";
+
+/* Helpers utilitaires (classes rapides) */
 @import "utils/helpers.css";
+
+/* Styles de base : tags HTML et media queries globales */
 @import "base/main.css";
 @import "base/media.css";
+
+/* Layout commun (header, footer, sections, grilles) */
 @import "layout/header.css";
 @import "layout/footer.css";
 @import "layout/section.css";
 @import "layout/grid.css";
+
+/* Composants reutilisables */
 @import "components/button.css";
 @import "components/card.css";
 @import "components/carousel.css";
@@ -16,5 +28,4 @@
 @import "components/thumbnail.css";
 @import "components/user.css";
 
-/* Placeholders supplémentaires */
-body{background:#fff}
+/* Pages : ajouter ici les fichiers specifiques si necessaire */

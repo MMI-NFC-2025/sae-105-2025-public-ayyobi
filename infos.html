@@ -12,8 +12,181 @@
   <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-  <h1>Infos pratiques</h1>
-  <p>Tarifs, transports, FAQ… (placeholder)</p>
+  <!-- HEADER -->
+  <header class="header">
+    <a class="header__link" href="index.html">
+      <img class="header__logo" src="/assets/img/logo-echos-sonore.svg" alt="Logo du festival Echos Sonore" />
+    </a>
+  
+    <button class="header__menu-btn menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
+      <span class="menu-btn__bar menu-btn__bar--top"></span>
+      <span class="menu-btn__bar menu-btn__bar--bottom"></span>
+    </button>
+  </header>
+  
+  <main class="infos-page section section--wrapper">
+    <!-- TITRE -->
+    <h1 class="section__title">Infos pratiques</h1>
+  
+    <!-- TARIFS -->
+    <section class="infos-section">
+      <h2 class="infos-section__title">Tarifs</h2>
+  
+      <ul class="tarifs-list u-list-unstyled">
+        <li class="tarifs-item">Pass 3 jours : 89 €</li>
+        <li class="tarifs-item">Pass 1 jour : 35 €</li>
+        <li class="tarifs-item">Étudiant : -20 %</li>
+        <li class="tarifs-item">&lt;12 ans : Gratuit</li>
+      </ul>
+    </section>
+  
+    <!-- HEBERGEMENTS -->
+    <section class="infos-section">
+      <h2 class="infos-section__title">Hébergements</h2>
+  
+      <!-- ITEM 1 -->
+      <article class="heb">
+        <button class="heb__btn" aria-expanded="false">
+          <img class="heb__img" src="/assets/img/hebergement/hotel.jpg" alt="Photo hôtel" />
+          <span class="heb__label">Hôtels & Auberges</span>
+          <span class="heb__icon">▼</span>
+        </button>
+  
+        <div class="heb__content" hidden>
+          <p>
+            Plusieurs hôtels et auberges situés à Audincourt et Montbéliard.
+            <br />Navette festival disponible.
+          </p>
+        </div>
+      </article>
+  
+      <!-- ITEM 2 -->
+      <article class="heb">
+        <button class="heb__btn" aria-expanded="false">
+          <img class="heb__img" src="/assets/img/hebergement/camping.jpg" alt="Photo camping" />
+          <span class="heb__label">Camping</span>
+          <span class="heb__icon">▼</span>
+        </button>
+  
+        <div class="heb__content" hidden>
+          <p>
+            Camping surveillé à proximité.
+            <br />Douches, sanitaires, zones ombragées.
+          </p>
+        </div>
+      </article>
+  
+      <!-- ITEM 3 -->
+      <article class="heb">
+        <button class="heb__btn" aria-expanded="false">
+          <img class="heb__img" src="/assets/img/hebergement/chez-habitant.jpg" alt="Hébergement chez l'habitant" />
+          <span class="heb__label">Hébergements chez l'habitant</span>
+          <span class="heb__icon">▼</span>
+        </button>
+  
+        <div class="heb__content" hidden>
+          <p>
+            Plateformes d’hébergement local recommandées.
+            <br />Accueil chaleureux garanti !
+          </p>
+        </div>
+      </article>
+    </section>
+  
+    <!-- TRANSPORT -->
+    <section class="infos-section">
+      <h2 class="infos-section__title">Transport</h2>
+  
+      <p>
+        <strong>En train</strong><br />
+        Gare la plus proche : Montbéliard<br />
+        Correspondance bus direction Audincourt (15 min)
+      </p>
+  
+      <p>
+        <strong>En voiture</strong><br />
+        Parkings gratuits autour du site<br />
+        Zones “dépose-minute”
+      </p>
+  
+      <p>
+        <strong>Covoiturage</strong><br />
+        Plateforme recommandée : Blablacar<br />
+        Zone “Covoiturage Festival” près de l’entrée
+      </p>
+  
+      <p>
+        <strong>Mobilité douce</strong><br />
+        Pistes cyclables jusqu’au site<br />
+        Parking vélo surveillé
+      </p>
+    </section>
+  
+    <!-- FAQ -->
+    <section class="infos-section">
+      <h2 class="infos-section__title">FAQ</h2>
+  
+      <ul class="faq u-list-unstyled">
+        <li class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span> Puis-je sortir et revenir ? </span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer" hidden>
+            <p>Oui, à condition de garder votre bracelet.</p>
+          </div>
+        </li>
+  
+        <li class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span> Les sacs sont-ils autorisés ? </span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer" hidden>
+            <p>Les petits sacs sont autorisés, contrôlés à l’entrée.</p>
+          </div>
+        </li>
+  
+        <li class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span> Le festival est-il accessible PMR ? </span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer" hidden>
+            <p>Oui, zones accessibles + assistance disponible.</p>
+          </div>
+        </li>
+  
+        <li class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span> Puis-je apporter de la nourriture ? </span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer" hidden>
+            <p>Oui, mais boissons en bouteille interdites.</p>
+          </div>
+        </li>
+  
+        <li class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span> Y a-t-il des stands de restauration ? </span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer" hidden>
+            <p>Oui, plusieurs food trucks et stands locaux.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="footer__legal">
+      © 2026 Echos Sonore – Projet étudiant.<br />
+      Site fictif réalisé dans le cadre de la SAE 105 – BUT MMI Montbéliard.
+    </p>
+  </footer>
   <script type="module" src="src/js/menu.js"></script>
   <script type="module" src="src/js/carousel.js"></script>
   <script type="module" src="src/js/faq.js"></script>

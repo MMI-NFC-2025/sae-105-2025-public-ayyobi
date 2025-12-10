@@ -12,8 +12,154 @@
   <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-  <h1>Contact</h1>
-  <p>Formulaire et informations de contact (placeholder).</p>
+
+      <!-- HEADER -->
+      <header class="header">
+        <a class="header__link" href="index.html">
+          <img class="header__logo" src="/assets/img/logo-echos-sonore.svg" alt="Logo du festival Echos Sonore" />
+        </a>
+      
+        <button class="header__menu-btn menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
+          <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
+          <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
+        </button>
+      
+        <nav class="header__menu menu" id="mainNav" hidden>
+          <ul class="menu__list u-list-unstyled">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">Accueil</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="festival.html">Le Festival</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="programme.html">Programme</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="artistes.html">Artistes</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="scenes.html">Scènes</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="infos.html">Infos pratiques</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--active" href="contact.html">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      
+      <main class="contact-page">
+        <section class="section section--wrapper">
+          <!-- FORMULAIRE -->
+          <form class="contact-form" action="#" method="post" autocomplete="on">
+            <div class="contact-form__group">
+              <label class="contact-form__label u-sr-only" for="name">
+                Nom
+              </label>
+              <input class="contact-form__input" type="text" id="name" name="name" required placeholder="NAME" />
+            </div>
+      
+            <div class="contact-form__group">
+              <label class="contact-form__label u-sr-only" for="email">
+                Email
+              </label>
+              <input class="contact-form__input" type="email" id="email" name="email" required placeholder="MAIL" />
+            </div>
+      
+            <div class="contact-form__group">
+              <label class="contact-form__label u-sr-only" for="subject">
+                Sujet
+              </label>
+              <input class="contact-form__input" type="text" id="subject" name="subject" required placeholder="SUJET" />
+            </div>
+      
+            <div class="contact-form__group">
+              <label class="contact-form__label u-sr-only" for="message">
+                Message
+              </label>
+              <textarea class="contact-form__textarea" id="message" name="message" rows="6" required
+                placeholder="MESSAGE"></textarea>
+            </div>
+      
+            <button class="btn contact-form__submit" type="submit">
+              Envoyer
+            </button>
+          </form>
+        </section>
+      
+        <!-- BLOC CONTACT + FOOTER GRADIENT (comme les autres pages) -->
+        <section class="section contact-infos">
+          <div class="contact-infos__overlay">
+            <nav class="contact-infos__nav">
+              <ul class="contact-infos__list u-list-unstyled">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="festival.html">Le Festival</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="artistes.html">Artistes</a></li>
+                <li><a href="scenes.html">Scènes</a></li>
+                <li><a href="infos.html">Infos pratiques</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+      
+            <div class="contact-infos__block">
+              <h2>Contact</h2>
+              <p>
+                Email :
+                <a href="mailto:contact@echossonore.fr">
+                  contact@echossonore.fr
+                </a>
+              </p>
+              <p>
+                Téléphone :
+                <a href="tel:0715153681">
+                  07&nbsp;15&nbsp;15&nbsp;36&nbsp;81
+                </a>
+              </p>
+              <p>
+                Adresse : Rue de Dalse, 25400 Audincourt
+              </p>
+      
+              <p>Réseaux sociaux</p>
+              <ul class="contact-infos__social u-list-unstyled">
+                <li>
+                  <a href="#" aria-label="Facebook">
+                    <img src="/assets/icons/facebook.svg" alt="" class="contact-infos__icon" loading="lazy" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Instagram">
+                    <img src="/assets/icons/instagram.svg" alt="" class="contact-infos__icon" loading="lazy" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="YouTube">
+                    <img src="/assets/icons/youtube.svg" alt="" class="contact-infos__icon" loading="lazy" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="TikTok">
+                    <img src="/assets/icons/tiktok.svg" alt="" class="contact-infos__icon" loading="lazy" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      
+      <!-- FOOTER -->
+      <footer class="footer footer--bottom">
+        <p class="footer__legal">
+          &copy; 2026 Echos Sonore – Projet étudiant.<br />
+          Site fictif réalisé dans le cadre de la SAE 105 – BUT MMI Montbéliard.
+        </p>
+      </footer>
   <script type="module" src="src/js/menu.js"></script>
   <script type="module" src="src/js/carousel.js"></script>
   <script type="module" src="src/js/faq.js"></script>

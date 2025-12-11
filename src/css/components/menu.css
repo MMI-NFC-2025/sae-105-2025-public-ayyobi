@@ -1,0 +1,149 @@
+﻿
+/* ==========================
+   BOUTON MENU (HAMBURGER)
+========================== */
+
+.header__menu-btn {
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+
+    position: relative;
+    z-index: 40;
+    /* au-dessus du menu overlay */
+}
+
+.menu-btn {
+    width: var(--space-3xl);
+    height: var(--space-xl);
+    position: relative;
+}
+
+.menu-btn__bar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+
+    height: 2px;
+    border-radius: 999px;
+    background-color: var(--blanc);
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease,
+        top 0.3s ease,
+        bottom 0.3s ease;
+}
+
+.menu-btn__bar--top {
+    top: 0;
+}
+
+.menu-btn__bar--middle {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu-btn__bar--bottom {
+    bottom: 0;
+}
+
+/* ÉTAT OUVERT : hamburger -> CROIX */
+
+.menu-btn--open .menu-btn__bar--top {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.menu-btn--open .menu-btn__bar--middle {
+    opacity: 0;
+}
+
+.menu-btn--open .menu-btn__bar--bottom {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+/* ==========================
+   MENU FULLSCREEN
+========================== */
+
+[hidden] {
+    display: none !important;
+}
+
+.menu {
+    position: fixed;
+    inset: 0;
+    z-index: 30;
+
+    background:var(--Noirbleunuit);
+    color: var(--blanc);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-5xl);
+    padding: var(--space-5xl) var(--space-3xl);
+    max-width: 100vw;
+
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+
+    transition:
+        transform 0.35s ease-out,
+        opacity 0.35s ease-out;
+}
+
+.menu--open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ==========================
+   LIENS DU MENU
+========================== */
+
+.menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4xl);
+    text-align: center;
+    margin-bottom: var(--space-5xl);
+    align-items: center;
+}
+
+.menu__link {
+    font-size: calc(var(--text_3xl) * 1px);
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--blanc);
+    letter-spacing: 0.01em;
+}
+
+.menu__link--active {
+    color: var(--Rougevif);
+}
+
+/* RÉSEAUX SOCIAUX EN BAS */
+
+.menu__social-list {
+    display: flex;
+    gap: var(--space-3xl);
+}
+
+.menu__social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Quand le menu est ouvert, on bloque le scroll derrière */
+body.has-menu-open {
+    overflow: hidden;
+}

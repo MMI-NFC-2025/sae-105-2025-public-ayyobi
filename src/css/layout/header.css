@@ -1,19 +1,30 @@
+/* ==========================
+   HEADER
+========================== */
+
 .header {
     position: absolute;
+    /* pour que le hero passe derrière */
+    top: 0;
     left: 0;
+    right: 0;
+    margin: 0 auto;
+
     width: 100%;
-    padding: var(--space-2xl) var(--space-4xl);
+    max-width: 480px;
+
+    padding: var(--space-xl) var(--space-2xl);
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    background: transparent;
+    z-index: 60; /* au-dessus de l'overlay du menu (menu z-index:30, bouton z-index:40) */
 }
 
-.header__link {
-    display: block;
+.header__logo {
+    height: 32px;
+    width: auto;
     position: relative;
-    z-index: 20;
-}
-
-.header__logo--light {
-    filter: invert(1);
+    z-index: 61; /* logo au-dessus du header pour être visible sur le menu */
 }

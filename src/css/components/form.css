@@ -1,0 +1,44 @@
+/* ==========================
+   SECTION CONTACT FORM
+========================== */
+
+/* FORMULAIRE */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+}
+
+/* INPUTS + TEXTAREA */
+.contact-form__input,
+.contact-form__textarea {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--Bleulectrique);
+    color: var(--blanc);
+    border: none;
+    border-bottom: 3px solid var(--Rougevif);
+    font-size: var(--text-lg);
+    transition: border 0.2s ease;
+    border-radius: 4px;
+}
+
+/* FOCUS : BORDER COMPLET */
+.contact-form__input:focus,
+.contact-form__textarea:focus {
+    outline: none;
+    border: 3px solid var(--Rougevif);
+}
+
+/* PLACEHOLDER BLANC */
+.contact-form__input::placeholder,
+.contact-form__textarea::placeholder {
+    color: var(--blanc);
+    opacity: 0.9;
+}
+
+/* TEXTAREA */
+.contact-form__textarea {
+    min-height: 180px;
+    resize: vertical;
+}

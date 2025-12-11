@@ -28,5 +28,7 @@
 @import "components/slogan.css";
 @import "components/thumbnail.css";
 @import "components/menu.css";
+@import "components/filtre.css";
+@import "components/form.css";
 
 /* Pages : ajouter ici les fichiers specifiques si necessaire */

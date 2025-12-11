@@ -1,4 +1,4 @@
-/* ==========================
+﻿/* ==========================
    RESET SIMPLE
 ========================== */
 *,
@@ -101,7 +101,7 @@ li {
 }
 
 /* ==========================
-   BOUTONS GÉNÉRIQUES
+   BOUTONS GÃ‰NÃ‰RIQUES
 ========================== */
 .btn {
     display: inline-block;
@@ -154,7 +154,7 @@ textarea::placeholder {
 }
 
 /* ==========================
-   ACCESSIBILITÉ
+   ACCESSIBILITÃ‰
 ========================== */
 .u-sr-only {
     position: absolute !important;

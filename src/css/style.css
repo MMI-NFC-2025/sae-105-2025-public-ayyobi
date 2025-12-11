@@ -20,11 +20,13 @@
 @import "layout/grid.css";
 
 /* Composants reutilisables */
+@import "components/hero.css";
 @import "components/button.css";
 @import "components/card.css";
 @import "components/carousel.css";
 @import "components/faq.css";
 @import "components/slogan.css";
 @import "components/thumbnail.css";
+@import "components/menu.css";
 
 /* Pages : ajouter ici les fichiers specifiques si necessaire */

@@ -1,6 +1,19 @@
-.header{
+.header {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: var(--space-2xl) var(--space-4xl);
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    justify-content: space-between;
+}
+
+.header__link {
+    display: block;
+    position: relative;
+    z-index: 20;
+}
+
+.header__logo--light {
+    filter: invert(1);
 }

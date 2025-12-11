@@ -1,0 +1,58 @@
+/* ==========================
+   HERO ACCUEIL
+========================== */
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    padding: var(--space-5xl) var(--space-3xl) var(--space-4xl);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: url("../../../assets/img/hero-img.avif") center/cover no-repeat;
+    color: var(--blanc);
+}
+
+.hero__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    max-width: 22rem;
+}
+
+.hero__festival-name {
+    font-size: calc(var(--text_5xl) * 1px);
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.hero__title {
+    font-size: calc(var(--text_xl) * 1px);
+    line-height: 1.5;
+    max-width: 18rem;
+}
+
+.hero__meta {
+    font-size: calc(var(--text_base) * 1px);
+    margin-top: var(--space-sm);
+    font-weight: 600;
+}
+
+.hero__dates,
+.hero__place {
+    display: block;
+    margin-top: var(--space-2xs);
+}
+
+.hero__cta {
+    margin-top: var(--space-2xl);
+    align-self: flex-start;
+    background: linear-gradient(135deg, #0c153c, #182b7a);
+    color: var(--Orange);
+    border-radius: 12px;
+    padding: 1rem 2.75rem;
+    font-size: calc(var(--text_base) * 1px);
+    font-weight: 700;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}

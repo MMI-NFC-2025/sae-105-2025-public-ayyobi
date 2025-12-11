@@ -1,0 +1,27 @@
+/* ==========================
+   FILTRES JOURS (TOUS / VEN / ...)
+========================== */
+
+.programme-filters {
+    margin-top: var(--space-xl);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-base);
+    font-size: calc(var(--text_sm) * 1px);
+}
+
+.programme-filters__btn {
+    border: none;
+    background: transparent;
+    color: var(--blanc);
+    padding: 0.45rem 0.9rem;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/* bouton actif "TOUS" */
+.programme-filters__btn--active {
+    background-color: var(--blanc);
+    color: var(--Noirbleunuit);
+    font-weight: 600;
+}

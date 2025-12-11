@@ -18,3 +18,29 @@
 .contact-form__submit:hover {
     opacity: 0.9;
 }
+
+
+/* ==========================
+   BOUTON PDF PROGRAMME 
+========================== */
+
+.programme__cta {
+    margin-top: var(--space-4xl);
+    text-align: center;
+}
+
+.programme__btn {
+    display: inline-block;
+    background-color: var(--blanc);
+    color: var(--Rougevif);
+    border-radius: 4px;
+    padding: 0.6rem 1.8rem;
+    font-size: calc(var(--text_sm) * 1px);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.programme__btn:hover,
+.programme__btn:focus {
+    opacity: 0.9;
+}

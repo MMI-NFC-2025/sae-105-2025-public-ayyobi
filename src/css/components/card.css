@@ -95,7 +95,10 @@
 /* Emoji (icône) */
 .nav-card__icon {
     font-size: calc(var(--text_lg) * 1px);
-    margin-bottom: var(--space-base);
+    margin-bottom: 0; /* remove bottom margin so it can sit inline with title */
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: var(--space-base);
 }
 
 /* Titre (Le Festival, Programme, etc.) */
@@ -103,6 +106,8 @@
     font-size: calc(var(--text_base) * 1px);
     font-weight: 700;
     margin-bottom: var(--space-sm);
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /* Texte descriptif */
@@ -155,11 +160,7 @@
     max-width: 100%;
 }
 
-/* Faire en sorte que .info-card ait la même largeur visuelle
-   que la carte `nav-card--festival` (compense la padding différente
-   de .section--highlight vs .section--wrapper) */
 .info-card {
-    /* élargit le bloc pour compenser le padding plus large du highlight */
     width: calc(100% + 2 * var(--space-4xl) - 2 * var(--space-xl));
     max-width: 480px; /* ne dépasse pas le wrapper principal */
     margin-left: calc(var(--space-xl) - var(--space-4xl));
@@ -192,9 +193,8 @@
 /* Petite icône emoji à gauche */
 .info-card__icon {
     flex-shrink: 0;
-    font-size: 1rem;
-    margin-top: 0.1rem;
-    /* pour bien aligner verticalement avec le texte */
+    font-size:var(--space-xl);
+    margin-top:var(--space-sm);
 }
 
 /* Met le texte important (strong) un peu plus lisible */

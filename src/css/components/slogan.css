@@ -1,1 +1,48 @@
-/* Bloc slogan / accroche */
+/* ==========================
+   SECTION "Nos valeurs"
+========================== */
+
+.section--values {
+    background-color: var(--Noirbleunuit);
+    padding-inline: var(--space-4xl);
+    padding-block: var(--space-4xl);
+    color: var(--blanc);
+}
+
+/* Titre "Nos valeurs" */
+.section--values .section__title {
+    font-size: calc(var(--text_2xl) * 1px);
+    font-weight: 700;
+    margin-bottom: var(--space-3xl);
+}
+
+/* Liste des valeurs */
+.values {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-base);
+}
+
+/* Chaque ligne de valeur */
+.values__item {
+    position: relative;
+    padding-left: 1.5rem;
+    /* place pour la flèche rouge */
+    font-size: calc(var(--text_sm) * 1px);
+    line-height: 1.4;
+}
+
+/* petite flèche rouge au début de chaque ligne */
+.values__item::before {
+    content: "➔";
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+    color: var(--Rougevif);
+    font-size: 0.9rem;
+}
+
+/* mettre en valeur le début de la phrase */
+.values__item strong {
+    font-weight: 700;
+}

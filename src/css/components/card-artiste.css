@@ -1,0 +1,83 @@
+
+/* ==========================
+   CARTES DE CHAQUE ARTISTE
+   (une carte = une vignette artiste)
+========================== */
+
+.artists-list__item {
+    /* espace au cas où on ajoute autre chose plus tard */
+}
+
+/* Carte globale */
+.artist-card {
+    background-color: var(--Bleulectrique);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* Lien qui englobe toute la carte */
+.artist-card__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-3xl) var(--space-3xl) var(--space-xl);
+    gap: var(--space-2xl);
+}
+
+/* --- Image ronde avec bord rouge --- */
+
+.artist-card__media-wrapper {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 4px;
+    /* épaisseur de l’anneau */
+    background: radial-gradient(circle, var(--Rougevif), var(--Rouge));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.artist-card__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* --- Contenu texte (nom, date, scène) --- */
+
+.artist-card__content {
+    text-align: center;
+}
+
+.artist-card__name {
+    font-size: calc(var(--text_base) * 1px);
+    font-weight: 700;
+    margin-bottom: var(--space-sm);
+}
+
+.artist-card__date {
+    font-size: calc(var(--text_sm) * 1px);
+    margin-bottom: var(--space-sm);
+}
+
+.artist-card__scene {
+    font-size: calc(var(--text_sm) * 1px);
+    opacity: 0.85;
+}
+
+/* --- Bouton flèche rouge à droite --- */
+
+.artist-card__cta {
+    align-self: flex-end;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--Rougevif);
+    color: var(--blanc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(var(--text_base) * 1px);
+}

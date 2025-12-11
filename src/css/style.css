@@ -21,7 +21,7 @@
 
 /* Composants reutilisables */
 @import "components/button.css";
-@import "components/card.css";
+@import "components/card-artiste.css";
 @import "components/carousel.css";
 @import "components/faq.css";
 @import "components/slogan.css";

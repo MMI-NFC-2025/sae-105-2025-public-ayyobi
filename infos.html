@@ -12,17 +12,75 @@
   <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-  <!-- HEADER -->
-  <header class="header">
-    <a class="header__link" href="index.html">
-      <img class="header__logo" src="assets/icons/logo-light.svg" alt="Logo du festival Echos Sonore" />
-    </a>
-  
-    <button class="header__menu-btn menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
-      <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
-      <span class="menu-btn__bar menu-btn__bar--middle" aria-hidden="true"></span>
-      <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
-    </button>
+    <!-- HEADER -->
+    <header class="header">
+      <a class="header__link" href="index.html">
+        <img class="header__logo" src="assets/icons/logo-light.svg" alt="Logo du festival Echos Sonore" />
+      </a>
+    
+      <button class="header__menu-btn menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
+        <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
+        <span class="menu-btn__bar menu-btn__bar--middle" aria-hidden="true"></span>
+        <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
+      </button>
+    
+      <nav class="header__menu menu" id="mainNav" hidden>
+        <ul class="menu__list u-list-unstyled">
+          <li class="menu__item">
+            <a class="menu__link menu__link--active" href="index.html">
+              Accueil
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="festival.html">
+              Le Festival
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="programme.html">
+              Programme
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="artistes.html">
+              Artistes
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="scenes.html">
+              Scènes
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="infos.html">
+              Infos pratiques
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contact.html">
+              Contact
+            </a>
+          </li>
+        </ul>
+    
+        <ul class="menu__social-list u-list-unstyled">
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="#" aria-label="Instagram">
+              <img src="./assets/icons/instagram-alt.svg" alt="instagram-icon" class="menu__social-icon" loading="lazy" />
+            </a>
+          </li>
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="#" aria-label="Facebook">
+              <img src="./assets/icons/facebook.svg" alt="facebook-icon" class="menu__social-icon" loading="lazy" />
+            </a>
+          </li>
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="#" aria-label="TikTok">
+              <img src="./assets/icons/tiktok.svg" alt="tiktok-icon" class="menu__social-icon" loading="lazy" />
+            </a>
+          </li>
+        </ul>
+      </nav>
   </header>
   
   <main class="infos-page section section--wrapper">

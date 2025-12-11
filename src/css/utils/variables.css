@@ -21,7 +21,7 @@
 
     /* Polices de caractA"re */
         --font-sans: "Inter", sans-serif;
-        --font-main: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        --font-main:"montserrat", sans-serif;
 
 /* Espaces */
     --space-sm: 0.125rem;

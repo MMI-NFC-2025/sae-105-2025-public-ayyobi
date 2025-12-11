@@ -17,7 +17,7 @@ html,
 body {
     background-color: var(--Noirbleunuit);
     color: var(--blanc);
-    font-family: var(--font-main);
+    font-family: var(--font-sans);
     margin: 0;
     padding: 0;
     min-height: 100%;
@@ -50,14 +50,17 @@ h5 {
 
 h1 {
     font-size: var(--text-3xl);
+    font-family: var(--font-main);
 }
 
 h2 {
     font-size: var(--text-2xl);
+    font-family: var(--font-main);
 }
 
 h3 {
     font-size: var(--text-xl);
+    font-family: var(--font-main);
 }
 
 /* ==========================

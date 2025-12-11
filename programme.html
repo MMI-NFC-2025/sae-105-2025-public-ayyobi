@@ -75,135 +75,103 @@
       <!-- SECTION PROGRAMME -->
       <section class="section section--wrapper programme">
         <header class="section__header programme__header">
-          <h1 class="section__title programme__title">
-            Programme
-          </h1>
+          <h1 class="section__title programme__title">Programme</h1>
+          <!-- filtres jours (maquette : TOUS / VEN / SAM / DIM / LUN) -->
+          <nav class="programme-filters" aria-label="Filtrer le programme par jour">
+            <button class="programme-filters__btn programme-filters__btn--active" type="button">
+              TOUS
+            </button>
+            <button class="programme-filters__btn" type="button">
+              VEN 10.28
+            </button>
+            <button class="programme-filters__btn" type="button">
+              SAM 10.29
+            </button>
+            <button class="programme-filters__btn" type="button">
+              DIM 10.30
+            </button>
+            <button class="programme-filters__btn" type="button">
+              LUN 10.31
+            </button>
+          </nav>
         </header>
     
-        <!-- Jour 1 -->
-        <section class="programme-day">
-          <h2 class="programme-day__title">28 oct</h2>
+        <!-- LISTE DES JOURS (cartes rouges avec dégradé) -->
+        <div class="programme-days">
     
-          <ul class="programme-day__list u-list-unstyled">
-            <li class="programme-day__item">
-              <span class="programme-day__time">18h</span>
-              <span class="programme-day__act">
-                Mystic Echoes
-                <span class="programme-day__style">(Dub)</span>
-              </span>
-            </li>
-            <li class="programme-day__item">
-              <span class="programme-day__time">19h30</span>
-              <span class="programme-day__act">
-                Naya &amp; The Vibrations
-                <span class="programme-day__style">(Fusion)</span>
-              </span>
-            </li>
-            <li class="programme-day__item">
-              <span class="programme-day__time">21h</span>
-              <span class="programme-day__act">
-                Jah Roots Collective
-                <span class="programme-day__style">(Roots)</span>
-              </span>
-            </li>
-            <li class="programme-day__item">
-              <span class="programme-day__time">22h30</span>
-              <span class="programme-day__act">
-                BassLine Dub System
-                <span class="programme-day__style">(Dub)</span>
-              </span>
-            </li>
-          </ul>
-        </section>
+          <!-- Jour 1 -->
+          <article class="programme-day">
+            <h2 class="programme-day__title">28 oct</h2>
     
-        <!-- Jour 2 -->
-        <section class="programme-day">
-          <h2 class="programme-day__title">29 oct</h2>
+            <ul class="programme-day__list u-list-unstyled">
+              <li class="programme-day__item">
+                18h — Mystic Echoes (Dub)
+              </li>
+              <li class="programme-day__item">
+                19h30 — Naya &amp; The Vibrations (Fusion)
+              </li>
+              <li class="programme-day__item">
+                21h — Jah Roots Collective (Roots)
+              </li>
+              <li class="programme-day__item">
+                22h30 — BassLine Dub System (Dub)
+              </li>
+            </ul>
+          </article>
     
-          <ul class="programme-day__list u-list-unstyled">
-            <li class="programme-day__item">
-              <span class="programme-day__time">17h30</span>
-              <span class="programme-day__act">
-                Kora Sunlight
-                <span class="programme-day__style">(Fusion)</span>
-              </span>
-            </li>
-            <li class="programme-day__item">
-              <span class="programme-day__time">19h</span>
-              <span class="programme-day__act">
-                Dub Strikers
-                <span class="programme-day__style">(Dub)</span>
-              </span>
-            </li>
-            <li class="programme-day__item">
-              <span class="programme-day__time">21h</span>
-              <span class="programme-day__act">
-                Lion Fire Crew
-                <span class="programme-day__style">(Roots)</span>
-              </span>
-            </li>
-          </ul>
-        </section>
+          <!-- Jour 2 -->
+          <article class="programme-day">
+            <h2 class="programme-day__title">29 oct</h2>
     
-        <!-- Jour 3 -->
-        <section class="programme-day">
-          <h2 class="programme-day__title">30 oct</h2>
+            <ul class="programme-day__list u-list-unstyled">
+              <li class="programme-day__item">
+                17h30 — Kora Sunlight (Fusion)
+              </li>
+              <li class="programme-day__item">
+                19h — Dub Strikers (Dub)
+              </li>
+              <li class="programme-day__item">
+                21h — Lion Fire Crew (Roots)
+              </li>
+            </ul>
+          </article>
     
-          <ul class="programme-day__list u-list-unstyled">
-            <li class="programme-day__item">
-              <span class="programme-day__time">18h</span>
-              <span class="programme-day__act">
-                Soul of Irie
-                <span class="programme-day__style">(Roots)</span>
-              </span>
-            </li>
-            <li class="programme-day__item">
-              <span class="programme-day__time">20h</span>
-              <span class="programme-day__act">
-                Electric Dub Tribe
-                <span class="programme-day__style">(Fusion)</span>
-              </span>
-            </li>
-            <li class="programme-day__item">
-              <span class="programme-day__time">22h</span>
-              <span class="programme-day__act">
-                Rasta Motion
-                <span class="programme-day__style">(Roots)</span>
-              </span>
-            </li>
-          </ul>
-        </section>
+          <!-- Jour 3 -->
+          <article class="programme-day">
+            <h2 class="programme-day__title">30 oct</h2>
     
-        <!-- Jour 4 -->
-        <section class="programme-day">
-          <h2 class="programme-day__title">31 oct</h2>
+            <ul class="programme-day__list u-list-unstyled">
+              <li class="programme-day__item">
+                18h — Soul of Irie (Roots)
+              </li>
+              <li class="programme-day__item">
+                20h — Electric Dub Tribe (Fusion)
+              </li>
+              <li class="programme-day__item">
+                22h — Rasta Motion (Roots)
+              </li>
+            </ul>
+          </article>
     
-          <ul class="programme-day__list u-list-unstyled">
-            <li class="programme-day__item">
-              <span class="programme-day__time">17h30</span>
-              <span class="programme-day__act">
-                Tribal Echo
-                <span class="programme-day__style">(Fusion)</span>
-              </span>
-            </li>
-            <li class="programme-day__item">
-              <span class="programme-day__time">19h</span>
-              <span class="programme-day__act">
-                Zion Pulse
-                <span class="programme-day__style">(Roots)</span>
-              </span>
-            </li>
-            <li class="programme-day__item">
-              <span class="programme-day__time">21h30</span>
-              <span class="programme-day__act">
-                Midnight Dub Circle
-                <span class="programme-day__style">(Dub)</span>
-              </span>
-            </li>
-          </ul>
-        </section>
+          <!-- Jour 4 -->
+          <article class="programme-day">
+            <h2 class="programme-day__title">31 oct</h2>
     
-        <!-- BOUTON PDF -->
+            <ul class="programme-day__list u-list-unstyled">
+              <li class="programme-day__item">
+                17h30 — Tribal Echo (Fusion)
+              </li>
+              <li class="programme-day__item">
+                19h — Zion Pulse (Roots)
+              </li>
+              <li class="programme-day__item">
+                21h30 — Midnight Dub Circle (Dub)
+              </li>
+            </ul>
+          </article>
+        </div>
+    
+        <!-- BOUTON PDF (en bas comme sur la maquette) -->
         <div class="programme__cta">
           <a class="btn btn--light programme__btn" href="/assets/doc/programme-echos-sonore.pdf" target="_blank"
             rel="noopener noreferrer">
@@ -212,6 +180,7 @@
         </div>
       </section>
     </main>
+
     
     <!-- FOOTER -->
     <footer class="footer">

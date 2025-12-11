@@ -1,11 +1,11 @@
-
 /* ==========================
    CARTES DE CHAQUE ARTISTE
    (une carte = une vignette artiste)
 ========================== */
 
 .artists-list__item {
-    /* espace au cas où on ajoute autre chose plus tard */
+    /* espace entre les cartes */
+    margin-bottom: var(--space-3xl);
 }
 
 /* Carte globale */
@@ -13,71 +13,53 @@
     background-color: var(--Bleulectrique);
     border-radius: 16px;
     overflow: hidden;
+    /* arrondi appliqué aussi à l'image */
 }
 
 /* Lien qui englobe toute la carte */
 .artist-card__link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: var(--space-3xl) var(--space-3xl) var(--space-xl);
-    gap: var(--space-2xl);
+    display: block;
+    color: var(--blanc);
+    text-decoration: none;
 }
 
-/* --- Image ronde avec bord rouge --- */
-
-.artist-card__media-wrapper {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    padding: 4px;
-    /* épaisseur de l’anneau */
-    box-shadow: 5px 5px 15px 3px var(--Rouge-vif, #DA261C);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
+/* --- Image rectangulaire en haut --- */
 .artist-card__img {
+    display: block;
     width: 100%;
-    height: 100%;
-    border-radius: 50%;
+    height: 200px;
+    /* ajuste si besoin */
     object-fit: cover;
 }
 
-/* --- Contenu texte (nom, date, scène) --- */
-
+/* --- Bloc texte bleu en bas --- */
 .artist-card__content {
+    padding: var(--space-xl);
     text-align: center;
 }
 
+/* Nom de l'artiste (blanc, gras) */
 .artist-card__name {
     font-size: calc(var(--text_base) * 1px);
     font-weight: 700;
     margin-bottom: var(--space-sm);
 }
 
+/* Date (rouge vif) */
 .artist-card__date {
     font-size: calc(var(--text_sm) * 1px);
+    color: var(--Rougevif);
     margin-bottom: var(--space-sm);
 }
 
+/* Scène (blanc, plus discret) */
 .artist-card__scene {
     font-size: calc(var(--text_sm) * 1px);
-    opacity: 0.85;
+    opacity: 0.9;
 }
 
-/* --- Bouton flèche rouge à droite --- */
-
-.artist-card__cta {
-    align-self: flex-end;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background-color: var(--Rougevif);
-    color: var(--blanc);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(var(--text_base) * 1px);
-}
+/* Anciennes versions (rond + flèche) -> plus nécessaires
+   Tu peux les supprimer si tu veux :
+   .artist-card__media-wrapper { ... }
+   .artist-card__cta { ... }
+*/

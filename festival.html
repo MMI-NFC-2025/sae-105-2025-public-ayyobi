@@ -109,41 +109,48 @@
         </div>
       </section>
     
-      <!-- NOS VALEURS -->
-      <section class="section section--wrapper festival-values">
-        <header class="section__header">
-          <h2 class="section__title">
-            Notre Equipe
-          </h2>
-        </header>
-    
-        <div class="festival-values__grid">
-          <article class="value-card value-card--eco">
-            <h3 class="value-card__title">Écologique</h3>
-            <p class="value-card__text">
-              Tri, énergies propres, circuits courts, actions solidaires
-              et réduction de l’empreinte carbone du festival.
-            </p>
-          </article>
-    
-          <article class="value-card value-card--convivial">
-            <h3 class="value-card__title">Convivial &amp; inclusif</h3>
-            <p class="value-card__text">
-              Un événement à taille humaine, accessible, où chacun peut
-              se sentir à sa place : public, bénévoles, artistes et
-              partenaires locaux.
-            </p>
-          </article>
-    
-          <article class="value-card value-card--creative">
-            <h3 class="value-card__title">Créatif &amp; surprenant</h3>
-            <p class="value-card__text">
-              Talents émergents, fusions musicales, scénographie unique
-              et expériences artistiques inattendues.
-            </p>
-          </article>
-        </div>
-      </section>
+        <!-- NOTRE ÉQUIPE (carrousel 4 images) -->
+        <section class="section section--wrapper festival-team">
+          <header class="section__header">
+            <h2 class="section__title">
+              Notre équipe
+            </h2>
+          </header>
+        
+          <div class="carousel team-carousel" aria-label="Carrousel de l'équipe du festival">
+            <div class="carousel__track-wrapper">
+              <button class="carousel__button carousel__button--prev" type="button" aria-label="Membre précédent">
+                ‹
+              </button>
+        
+              <div class="carousel__viewport">
+                <ul class="carousel__track u-list-unstyled">
+                  <li class="carousel__slide team-carousel__slide">
+                    <img class="team-carousel__photo" src="/assets/img/equipe/team-01.jpg"
+                      alt="Membre de l'équipe Echos Sonores 1" loading="lazy" />
+                  </li>
+                  <li class="carousel__slide team-carousel__slide">
+                    <img class="team-carousel__photo" src="/assets/img/equipe/team-02.jpg"
+                      alt="Membre de l'équipe Echos Sonores 2" loading="lazy" />
+                  </li>
+                  <li class="carousel__slide team-carousel__slide">
+                    <img class="team-carousel__photo" src="/assets/img/equipe/team-03.jpg"
+                      alt="Membre de l'équipe Echos Sonores 3" loading="lazy" />
+                  </li>
+                  <li class="carousel__slide team-carousel__slide">
+                    <img class="team-carousel__photo" src="/assets/img/equipe/team-04.jpg"
+                      alt="Membre de l'équipe Echos Sonores 4" loading="lazy" />
+                  </li>
+                </ul>
+              </div>
+        
+              <button class="carousel__button carousel__button--next" type="button" aria-label="Membre suivant">
+                ›
+              </button>
+            </div>
+          </div>
+        </section>
+
     </main>
     
     <!-- FOOTER -->

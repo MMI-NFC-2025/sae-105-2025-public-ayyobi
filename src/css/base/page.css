@@ -120,3 +120,17 @@
     font-size: calc(var(--text_base) * 1px);
     text-decoration: underline;
 }
+
+/* ==========================
+   page festival
+========================== */
+/* Contenu paragraphe */
+.festival__content {
+  line-height: 1.5;
+  max-width: 34rem;
+}
+
+/* Espacement entre les paragraphes */
+.festival__content p+p {
+  margin-top: var(--space-3xl);
+}

@@ -1,3 +1,103 @@
-/* Carousel basique */
-.carousel{position:relative;overflow:hidden}
-.carousel__track{display:flex;transition:transform .4s ease}
+/* ==========================
+   CAROUSEL - NOTRE ÉQUIPE
+========================== */
+
+.carousel {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel__track-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2xl);
+    width: 100%;
+}
+
+.carousel__viewport {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.carousel__track {
+    display: flex;
+    transition: transform 0.4s ease-out;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.carousel__slide {
+    width: 100%;
+    min-width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Images du carrousel */
+.team-carousel__photo {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+/* Boutons de navigation */
+.carousel__button {
+    position: relative;
+    background-color: var(--Bleulectrique);
+    color: var(--blanc);
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    flex-shrink: 0;
+}
+
+.carousel__button:hover,
+.carousel__button:focus {
+    background-color: var(--Rougevif);
+    outline: none;
+}
+
+.carousel__button--prev,
+.carousel__button--next {
+    z-index: 10;
+}
+
+/* Indicateurs (optionnel - dots) */
+.carousel__indicators {
+    display: flex;
+    gap: var(--space-base);
+    justify-content: center;
+    margin-top: var(--space-2xl);
+}
+
+.carousel__dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel__dot--active {
+    background-color: var(--Rougevif);
+}

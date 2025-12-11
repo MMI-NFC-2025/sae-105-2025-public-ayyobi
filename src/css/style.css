@@ -17,7 +17,7 @@
 @import "layout/header.css";
 @import "layout/footer.css";
 @import "layout/section.css";
-@import "layout/grid.css";
+@import "layout/grille.css";
 
 /* Composants reutilisables */
 @import "components/hero.css";

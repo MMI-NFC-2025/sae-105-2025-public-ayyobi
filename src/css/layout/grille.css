@@ -1,0 +1,45 @@
+/* Grille responsive (optionnelle) */
+/* ==========================
+   SECTION "Nos partenaires"
+========================== */
+
+.section--partners {
+    background-color: var(--Noirbleunuit);
+    padding-inline: var(--space-4xl);
+    padding-block: var(--space-4xl);
+    color: var(--blanc);
+}
+
+/* Titre "Nos Partenaires" */
+.section--partners .section__title {
+    font-size: calc(var(--text_2xl) * 1px);
+    font-weight: 700;
+    margin-bottom: var(--space-3xl);
+}
+
+/* Grille des logos : 2 colonnes x 2 lignes */
+.partners {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3xl);
+}
+
+/* Chaque carte de partenaire */
+.partners__item {
+    background-color: var(--blanc);
+    border-radius: 4px;
+    overflow: hidden;
+
+    /* pour garder un format carré proche de la maquette */
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Image du logo */
+.partners__logo {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}

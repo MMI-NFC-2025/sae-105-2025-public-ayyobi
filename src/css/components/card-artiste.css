@@ -32,7 +32,7 @@
     border-radius: 50%;
     padding: 4px;
     /* épaisseur de l’anneau */
-    background: radial-gradient(circle, var(--Rougevif), var(--Rouge));
+    box-shadow: 5px 5px 15px 3px var(--Rouge-vif, #DA261C);
     display: flex;
     align-items: center;
     justify-content: center;

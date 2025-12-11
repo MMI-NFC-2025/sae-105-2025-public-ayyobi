@@ -38,3 +38,45 @@
   min-height: 180px;
   resize: vertical;
 }
+
+
+/* ==========================
+   PAGE 404
+========================== */
+
+.page-404__main {
+    text-align: center;
+}
+
+/* Cercle rouge */
+.page-404__circle {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    margin: 20%  auto;
+    background-color: var(--Rougevif);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* "404" */
+.page-404__code {
+    font-weight: 700;
+    font-size: calc(var(--text_5xl) * 1px);
+}
+
+/* "Page introuvable" */
+.page-404__text {
+    font-weight: 600;
+    font-size: calc(var(--text_2xl) * 1px);
+}
+
+/* Lien retour (optionnel) */
+.page-404__link {
+    display: inline-block;
+    margin-top: var(--space-4xl);
+    font-size: calc(var(--text_base) * 1px);
+    text-decoration: underline;
+}

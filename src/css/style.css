@@ -21,11 +21,10 @@
 
 /* Composants reutilisables */
 @import "components/button.css";
-@import "components/card-artiste.css";
+@import "components/card.css";
 @import "components/carousel.css";
 @import "components/faq.css";
 @import "components/slogan.css";
 @import "components/thumbnail.css";
-@import "components/user.css";
 
 /* Pages : ajouter ici les fichiers specifiques si necessaire */

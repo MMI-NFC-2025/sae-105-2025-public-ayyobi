@@ -1,0 +1,134 @@
+/* ==========================
+   CARTES DE CHAQUE ARTISTE
+   (une carte = une vignette artiste)
+========================== */
+
+.artists-list__item {
+    /* espace entre les cartes */
+    margin-bottom: var(--space-3xl);
+}
+
+/* Carte globale */
+.artist-card {
+    background-color: var(--Bleulectrique);
+    border-radius: 16px;
+    overflow: hidden;
+    /* arrondi appliqué aussi à l'image */
+}
+
+/* Lien qui englobe toute la carte */
+.artist-card__link {
+    display: block;
+    color: var(--blanc);
+    text-decoration: none;
+}
+
+/* --- Image rectangulaire en haut --- */
+.artist-card__img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    /* ajuste si besoin */
+    object-fit: cover;
+}
+
+/* --- Bloc texte bleu en bas --- */
+.artist-card__content {
+    padding: var(--space-xl);
+    text-align: center;
+}
+
+/* Nom de l'artiste (blanc, gras) */
+.artist-card__name {
+    font-size: calc(var(--text_base) * 1px);
+    font-weight: 700;
+    margin-bottom: var(--space-sm);
+}
+
+/* Date (rouge vif) */
+.artist-card__date {
+    font-size: calc(var(--text_sm) * 1px);
+    color: var(--Rougevif);
+    margin-bottom: var(--space-sm);
+}
+
+/* Scène (blanc, plus discret) */
+.artist-card__scene {
+    font-size: calc(var(--text_sm) * 1px);
+    opacity: 0.9;
+}
+
+
+/* ==========================
+   CARTES NAVIGATION ACCUEIL
+   (Le Festival / Programme / Artistes / Infos)
+========================== */
+
+/* Section qui contient les cartes */
+.section--nav-cards {
+    margin-top: var(--space-4xl);
+}
+
+/* Liste des cartes */
+.nav-cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2xl);
+}
+
+/* Carte globale */
+.nav-card {
+    background: linear-gradient(180deg, var(--Rouge, #7A1511) 0%, var(--Noir-bleu-nuit, #030624) 100%);
+    color: var(--blanc);
+    border-radius: 8px;
+    padding: var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Contenu texte de la carte */
+.nav-card__content {
+    margin-bottom: var(--space-lg);
+}
+
+/* Emoji (icône) */
+.nav-card__icon {
+    font-size: calc(var(--text_lg) * 1px);
+    margin-bottom: var(--space-base);
+}
+
+/* Titre (Le Festival, Programme, etc.) */
+.nav-card__title {
+    font-size: calc(var(--text_base) * 1px);
+    font-weight: 700;
+    margin-bottom: var(--space-sm);
+}
+
+/* Texte descriptif */
+.nav-card__text {
+    font-size: calc(var(--text_sm) * 1px);
+    line-height: 1.4;
+}
+
+/* Bouton "Découvrir" en bas à droite */
+.nav-card__btn {
+    align-self: flex-end;
+    padding: 0.35rem 0.9rem;
+    border-radius: 4px;
+    border: none;
+
+    background-color: var(--Bleulectrique);
+    color: var(--Rougevif);
+
+    font-size: calc(var(--text_sm) * 1px);
+    font-weight: 600;
+    text-transform: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-card__btn:hover,
+.nav-card__btn:focus {
+    opacity: 0.9;
+}

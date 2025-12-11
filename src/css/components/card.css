@@ -132,3 +132,72 @@
 .nav-card__btn:focus {
     opacity: 0.9;
 }
+
+/* ==========================
+   BLOC INFOS CLÉS SOUS LE HERO
+========================== */
+
+/* Fond bleu foncé sur toute la largeur utile */
+.section--highlight {
+    background-color: var(--Noirbleunuit);
+    padding-inline: var(--space-4xl);
+    padding-block: var(--space-4xl);
+}
+
+/* Carte bleue avec légère ombre */
+.info-card {
+    background: linear-gradient(to top,
+            rgba(12, 30, 91, 0.98),
+            rgba(3, 6, 36, 1));
+    /* bleu électrique -> bleu nuit */
+    
+    padding: var(--space-4xl);
+    max-width: 100%;
+}
+
+/* Faire en sorte que .info-card ait la même largeur visuelle
+   que la carte `nav-card--festival` (compense la padding différente
+   de .section--highlight vs .section--wrapper) */
+.info-card {
+    /* élargit le bloc pour compenser le padding plus large du highlight */
+    width: calc(100% + 2 * var(--space-4xl) - 2 * var(--space-xl));
+    max-width: 480px; /* ne dépasse pas le wrapper principal */
+    margin-left: calc(var(--space-xl) - var(--space-4xl));
+    margin-right: calc(var(--space-xl) - var(--space-4xl));
+}
+
+/* Titre "28 au 31 octobre 2026" */
+.info-card__title {
+    font-size: calc(var(--text_base) * 1px);
+    font-weight: 700;
+    margin-bottom: var(--space-3xl);
+}
+
+/* Liste des infos */
+.info-card__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-base);
+}
+
+/* Chaque ligne (icône + texte) */
+.info-card__item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-base);
+    font-size: calc(var(--text_sm) * 1px);
+    line-height: 1.4;
+}
+
+/* Petite icône emoji à gauche */
+.info-card__icon {
+    flex-shrink: 0;
+    font-size: 1rem;
+    margin-top: 0.1rem;
+    /* pour bien aligner verticalement avec le texte */
+}
+
+/* Met le texte important (strong) un peu plus lisible */
+.info-card__item strong {
+    font-weight: 600;
+}

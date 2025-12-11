@@ -8,6 +8,11 @@
     margin: 0 auto;
 }
 
+/* Espace entre le titre de la section "Notre équipe" et le carousel */
+.festival-team .carousel {
+    margin-top: var(--space-lg);
+}
+
 .carousel__track-wrapper {
     display: flex;
     align-items: center;

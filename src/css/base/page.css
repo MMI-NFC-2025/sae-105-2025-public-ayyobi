@@ -178,3 +178,32 @@
 
   text-decoration: none;
 }
+
+/* ==========================
+   PAGE INFOS PRATIQUES
+========================== */
+
+.infos-page {
+  max-width: 480px;
+  margin: 0 auto var(--space-6xl);
+  padding: var(--space-6xl) var(--space-4xl) var(--space-6xl);
+  background-color: var(--Noirbleunuit);
+  color: var(--blanc);
+}
+
+/* Titre principal */
+.infos-page .section__title {
+  font-size: calc(var(--text_3xl) * 1px);
+  margin-bottom: var(--space-4xl);
+}
+
+/* Chaque bloc (Tarifs, Hébergements, Transport, FAQ) */
+.infos-section {
+  margin-bottom: var(--space-6xl);
+}
+
+.infos-section__title {
+  font-size: calc(var(--text_2xl) * 1px);
+  font-weight: 700;
+  margin-bottom: var(--space-3xl);
+}

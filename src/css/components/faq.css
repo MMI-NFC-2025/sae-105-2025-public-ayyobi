@@ -1,3 +1,60 @@
 /* Bloc FAQ accordéon */
-.faq__item{border-bottom:1px solid #eee;padding:.75rem 0}
-.faq__question{cursor:pointer}
+/* ==========================
+   FAQ (accordion)
+========================== */
+
+.faq {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    margin-top: var(--space-3xl);
+}
+
+.faq__item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* Question */
+.faq__question {
+    width: 100%;
+    padding-block: var(--space-2xl);
+    padding-inline: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: none;
+    border: none;
+    color: var(--blanc);
+    cursor: pointer;
+
+    font-size: calc(var(--text_sm) * 1px);
+    text-align: left;
+}
+
+/* Petit point rouge au début du texte (optionnel) */
+.faq__question span:first-child {
+    position: relative;
+    padding-left: var(--space-2xl);
+}
+
+.faq__question span:first-child::before {
+    content: "❓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--Rougevif);
+}
+
+/* Icône + / - */
+.faq__icon {
+    font-size: calc(var(--text_lg) * 1px);
+    font-weight: 700;
+    margin-left: var(--space-3xl);
+}
+
+/* Réponse */
+.faq__answer {
+    font-size: calc(var(--text_sm) * 1px);
+    line-height: 1.6;
+    padding-bottom: var(--space-3xl);
+    padding-right: var(--space-4xl);
+}

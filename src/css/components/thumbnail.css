@@ -1,1 +1,112 @@
 /* Vignettes (artistes, scènes) */
+/* ==========================
+   TARIFS
+========================== */
+
+.tarifs-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-base);
+}
+
+.tarifs-item {
+    background-color: var(--Bleulectrique);
+    color: var(--blanc);
+    padding: var(--space-2xl) var(--space-3xl);
+    font-size: calc(var(--text_sm) * 1px);
+    border-radius: 2px;
+    border-bottom: 2px solid var(--Rougevif);
+}
+
+/* ==========================
+   HÉBERGEMENTS (accordion)
+========================== */
+
+.heb {
+    margin-bottom: var(--space-4xl);
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: var(--Bleulectrique);
+}
+
+/* Bouton qui contient image + texte + icône */
+.heb__btn {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: var(--blanc);
+}
+
+/* Image */
+.heb__img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Bandeau bas */
+.heb__label,
+.heb__icon {
+    position: absolute;
+    bottom: 0;
+    padding-block: var(--space-2xl);
+}
+
+.heb__label {
+    left: 0;
+    right: 56px;
+    padding-inline: var(--space-3xl);
+    font-size: calc(var(--text_sm) * 1px);
+    font-weight: 600;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.85) 0%,
+            rgba(0, 0, 0, 0.6) 60%,
+            transparent 100%);
+}
+
+/* Icône flèche */
+.heb__icon {
+    right: 0;
+    width: 56px;
+    text-align: center;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 0, 0, 0.7) 60%,
+            transparent 100%);
+    font-size: calc(var(--text_lg) * 1px);
+    transition: transform 0.25s ease;
+}
+
+/* État ouvert : on tourne la flèche */
+.heb__btn[aria-expanded="true"] .heb__icon {
+    transform: rotate(180deg);
+}
+
+/* Contenu déroulant */
+.heb__content {
+    padding: var(--space-3xl);
+    font-size: calc(var(--text_sm) * 1px);
+    line-height: 1.6;
+    background-color: #02051f;
+    /* un peu plus sombre */
+}
+
+/* ==========================
+   TRANSPORT
+========================== */
+
+.infos-section p {
+    font-size: calc(var(--text_sm) * 1px);
+    line-height: 1.6;
+    margin-bottom: var(--space-3xl);
+}
+
+.infos-section p strong {
+    font-weight: 700;
+}

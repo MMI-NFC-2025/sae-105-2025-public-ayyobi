@@ -22,7 +22,6 @@
     transition: border 0.2s ease;
     border-radius: 0.25rem;
 }
-
 /* FOCUS : BORDER COMPLET */
 .contact-form__input:focus,
 .contact-form__textarea:focus {

@@ -32,43 +32,42 @@
     margin-top: var(--space-sm);
 }
 
-/* ==========================
-   BLOC INTRO ARTISTE (nom, date, scène, texte)
-========================== */
+/* ======================================
+   BLOC INFOS ARTISTE (nom, date, scène, bio)
+====================================== */
 
-.artist-intro {
+.artist-page__info {
     max-width: 480px;
     margin-inline: auto;
     padding-inline: var(--space-4xl);
     padding-block: var(--space-4xl);
 }
 
-.artist-intro__name {
+/* Nom de l'artiste */
+.artist-page__name {
     font-size: calc(var(--text_2xl) * 1px);
     font-weight: 700;
     margin-bottom: var(--space-3xl);
 }
 
-/* date + heure */
-.artist-intro__date {
-    font-size: calc(var(--text_sm) * 1px);
-    font-weight: 600;
-    color: var(--Rougevif);
-    margin-bottom: var(--space-sm);
-}
-
-/* scène */
-.artist-intro__scene {
+/* Ligne date + scène */
+.artist-page__meta {
     font-size: calc(var(--text_sm) * 1px);
     margin-bottom: var(--space-3xl);
 }
 
-/* texte descriptif */
-.artist-intro__text {
-    font-size: calc(var(--text_sm) * 1px);
-    line-height: 1.5;
+.artist-page__date {
+    color: var(--Rougevif);
+    font-weight: 600;
 }
 
-.artist-intro__text+.artist-intro__text {
-    margin-top: var(--space-3xl);
+.artist-page__scene {
+    display: inline-block;
+    margin-top: var(--space-sm);
+}
+
+/* Texte bio */
+.artist-page__bio {
+    font-size: calc(var(--text_sm) * 1px);
+    line-height: 1.5;
 }

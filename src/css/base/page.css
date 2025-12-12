@@ -53,46 +53,49 @@
   margin-top: var(--space-3xl);
 }
 
-/* ==========================
-   PAGE ARTISTE – fond général
-========================== */
+/* ======================================
+   PAGE ARTISTE – Styles généraux
+====================================== */
 
-.artist-page {
-  background-color: var(--Noirbleunuit);
-  color: var(--blanc);
-  font-family: var(--font-sans);
-}
-
-/* HERO IMAGE + BOUTON RETOUR */
-
-.artist-hero {
+/* HERO ARTISTE (image + bouton retour) */
+.artist-page__hero {
   position: relative;
   max-width: 480px;
-  margin-inline: auto;
+  margin: 4.5rem auto 0;
+  /* espace en haut pour laisser le header tranquille */
   background-color: var(--Noirbleunuit);
 }
 
-.artist-hero__img {
+/* Bouton rond rouge avec flèche */
+.artist-page__back-btn {
+  position: absolute;
+  top: var(--space-3xl);
+  /* plus bas dans l’image */
+  left: var(--space-4xl);
+
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+
+  background-color: var(--Rougevif);
+  color: var(--blanc);
+  font-size: calc(var(--text_lg) * 1px);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+  z-index: 5;
+  /* au-dessus de la photo, mais pas besoin d’écraser le header */
+}
+
+.artist-page__hero-img {
   display: block;
   width: 100%;
   height: auto;
   object-fit: cover;
-}
-
-/* bouton rond rouge avec flèche */
-.artist-hero__back {
-  position: absolute;
-  top: var(--space-4xl);
-  left: var(--space-4xl);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: none;
-  background-color: var(--Rougevif);
-  color: var(--blanc);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
 }

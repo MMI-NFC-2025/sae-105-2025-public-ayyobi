@@ -219,7 +219,6 @@
 /* Titre "LES ARTISTES" */
 .artists__header {
     margin-bottom: var(--space-3xl);
-    margin-top: var(--space-6xl);
 }
 
 .artists__title {

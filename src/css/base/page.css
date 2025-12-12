@@ -52,3 +52,47 @@
 .festival__content p+p {
   margin-top: var(--space-3xl);
 }
+
+/* ==========================
+   PAGE ARTISTE – fond général
+========================== */
+
+.artist-page {
+  background-color: var(--Noirbleunuit);
+  color: var(--blanc);
+  font-family: var(--font-sans);
+}
+
+/* HERO IMAGE + BOUTON RETOUR */
+
+.artist-hero {
+  position: relative;
+  max-width: 480px;
+  margin-inline: auto;
+  background-color: var(--Noirbleunuit);
+}
+
+.artist-hero__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* bouton rond rouge avec flèche */
+.artist-hero__back {
+  position: absolute;
+  top: var(--space-4xl);
+  left: var(--space-4xl);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--Rougevif);
+  color: var(--blanc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+}

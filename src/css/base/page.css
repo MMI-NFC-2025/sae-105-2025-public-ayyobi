@@ -58,7 +58,7 @@
 ====================================== */
 
 /* HERO ARTISTE (image + bouton retour) */
-.artist-page__hero {
+.artist-page__hero{
   position: relative;
   max-width: 480px;
   margin: 4.5rem auto 0;

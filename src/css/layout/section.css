@@ -1,1 +1,74 @@
 /* Layout des sections */
+/* ==========================
+   PAGE SCÈNES – LISTE DES SCÈNES
+   (section .scenes uniquement)
+========================== */
+
+.scenes {
+    max-width: 480px;
+    margin: 0 auto;
+    padding-inline: var(--space-4xl);
+    padding-block: var(--space-5xl);
+    background-color: var(--Noirbleunuit);
+    color: var(--blanc);
+}
+
+/* Titre "Les Scènes du Echos Sonores" */
+.scenes__title {
+    font-size: calc(var(--text_4xl) * 1px);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: var(--space-4xl);
+}
+
+/* Liste des cartes */
+.scenes-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5xl);
+}
+
+/* Chaque item de liste (pour pouvoir gérer des marges si besoin) */
+.scenes-list__item {
+    list-style: none;
+}
+
+/* Carte cliquable */
+.scene-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    background-color: var(--Noirbleunuit);
+}
+
+/* Lien qui englobe image + bande rouge */
+.scene-card__link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Image de la scène */
+.scene-card__img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    /* ajuste si besoin */
+    object-fit: cover;
+}
+
+/* Bande rouge avec le nom de la scène */
+.scene-card__label {
+    background: linear-gradient(180deg,
+            var(--Rougevif) 0%,
+            var(--Rouge) 100%);
+    text-align: center;
+    padding-block: var(--space-xl);
+    font-size: calc(var(--text_2xl) * 1px);
+}
+
+/* Petit effet hover (optionnel) */
+.scene-card:hover {
+    transform: translateY(-3px);
+    transition: transform 0.25s ease;
+}

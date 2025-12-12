@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="src/css/style.css">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body>
   <main class="page-404__main" role="main">
@@ -20,6 +21,11 @@
     <a class="page-404__link" href="index.html">
       Revenir à l’accueil
     </a>
+    <form class="contact-form page-404__form" action="https://duckduckgo.com/" method="GET" x-data="{ q:'', }" x-on:submit="q = q + ' site:mmimontbeliard.com'">
+      <label for="q" class="contact-form__label">Texte à chercher :</label>
+      <input class="contact-form__input" type="text" id="q" name="q" x-model="q" placeholder="Rechercher sur le site" />
+      <button class="contact-form__submit" type="submit">Rechercher</button>
+    </form>
   </main>
 </body>
 </html>

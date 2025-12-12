@@ -38,6 +38,39 @@
     font-size: calc(var(--text_base) * 1px);
     text-decoration: underline;
 }
+/* Page 404 — style spécifique pour le petit formulaire */
+.page-404__form {
+  max-width: 520px;
+  margin: var(--space-5xl) auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.03));
+  padding: var(--space-4xl);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(2, 5, 31, 0.5);
+  align-items: stretch;
+}
+
+.page-404__form .contact-form__label {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+}
+
+/* input spécifique 404: arrondis et léger glow */
+.page-404__form .contact-form__input {
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.page-404__form .contact-form__submit {
+  max-width: 220px;
+  align-self: center;
+  padding: 0.9rem 1.4rem;
+  border-radius: 999px;
+  box-shadow: 0 8px 18px rgba(250, 87, 73, 0.18);
+}
 
 /* ==========================
    page festival

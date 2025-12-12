@@ -72,3 +72,30 @@
     font-weight: 600;
     text-decoration: none;
 }
+
+/* ==========================
+   PAGE SCÈNE — BOUTON RETOUR
+========================== */
+
+.back-btn {
+    position: relative;
+    z-index: 1;
+    margin-top: var(--space-8xl);
+    margin-left: var(--space-4xl);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: var(--Rougevif);
+    color: var(--blanc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(var(--text_2xl) * 1px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.back-btn span[aria-hidden="true"] {
+    transform: translateY(-1px);
+}

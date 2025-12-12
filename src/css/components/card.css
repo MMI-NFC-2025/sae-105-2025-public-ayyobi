@@ -155,7 +155,7 @@
             rgba(12, 30, 91, 0.98),
             rgba(3, 6, 36, 1));
     /* bleu électrique -> bleu nuit */
-    
+    border-radius: 8px;
     padding: var(--space-4xl);
     max-width: 100%;
 }

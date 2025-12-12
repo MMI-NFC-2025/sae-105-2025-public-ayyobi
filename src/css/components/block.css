@@ -13,6 +13,7 @@
 .programme-day {
     background: linear-gradient(180deg, #030624 0%, var(--Rouge, #7A1511) 51.44%);
     padding: var(--space-3xl);
+    border-radius: 8px;
 }
 
 /* Titre du jour "28 oct" */

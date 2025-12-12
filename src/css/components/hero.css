@@ -48,11 +48,11 @@
 .hero__cta {
     margin-top: var(--space-2xl);
     align-self: flex-start;
-    background: linear-gradient(135deg, #0c153c, #182b7a);
+    background: linear-gradient(135deg, var(--Bleulectrique), var(--Bleu-gradient));
     color: var(--Orange);
-    border-radius: 12px;
+    border-radius: 0.75rem;
     padding: 1rem 2.75rem;
     font-size: calc(var(--text_base) * 1px);
     font-weight: 700;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0.75rem 1.875rem rgba(0, 0, 0, 0.35);
 }

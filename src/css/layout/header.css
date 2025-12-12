@@ -11,7 +11,7 @@
     margin: 0 auto;
 
     width: 100%;
-    max-width: 480px;
+    max-width: 30rem;
 
     padding: var(--space-xl) var(--space-2xl);
     display: flex;
@@ -23,7 +23,7 @@
 }
 
 .header__logo {
-    height: 32px;
+    height: 2rem;
     width: auto;
     position: relative;
     z-index: 61; /* logo au-dessus du header pour être visible sur le menu */

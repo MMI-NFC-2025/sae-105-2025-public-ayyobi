@@ -27,7 +27,7 @@
 /* Chaque carte de partenaire */
 .partners__item {
     background-color: var(--blanc);
-    border-radius: 4px;
+    border-radius: 0.25rem;
     overflow: hidden;
 
     /* pour garder un format carré proche de la maquette */

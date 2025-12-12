@@ -28,7 +28,7 @@
 .carousel__viewport {
     width: 100%;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     margin: 0 auto;
 }
 
@@ -65,8 +65,8 @@
     background-color: var(--Bleulectrique);
     color: var(--blanc);
     border: none;
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     font-size: 1.5rem;
     cursor: pointer;
@@ -106,8 +106,8 @@
 }
 
 .carousel__dot {
-    width: 12px;
-    height: 12px;
+    width: 0.75rem;
+    height: 0.75rem;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.4);
     border: none;

@@ -97,7 +97,7 @@ li {
 ========================== */
 .section--wrapper {
     width: 100%;
-    max-width: 480px;
+    max-width: 30rem;
     /* mobile */
     margin-inline: auto;
     padding-inline: var(--space-xl);
@@ -152,7 +152,7 @@ textarea {
     width: 100%;
     padding: 0.9rem 1rem;
     border-radius: 0.5rem;
-    border: 2px solid var(--rougevif);
+    border: 0.125rem solid var(--rougevif);
     background-color: var(--bleu-electrique);
     color: var(--blanc);
     font-size: var(--text-base);
@@ -169,10 +169,10 @@ textarea::placeholder {
 ========================== */
 .u-sr-only {
     position: absolute !important;
-    width: 1px;
-    height: 1px;
+    width: 0.0625rem;
+    height: 0.0625rem;
     padding: 0;
-    margin: -1px;
+    margin: -0.0625rem;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;

@@ -11,9 +11,9 @@
 
 /* Carte d’un jour (dégradé rouge) */
 .programme-day {
-    background: linear-gradient(180deg, #030624 0%, var(--Rouge, #7A1511) 51.44%);
+    background: linear-gradient(180deg, var(--Noirbleunuit) 0%, var(--Rouge) 51.44%);
     padding: var(--space-3xl);
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 
 /* Titre du jour "28 oct" */
@@ -38,7 +38,7 @@
 ====================================== */
 
 .artist-page__info {
-    max-width: 480px;
+    max-width: 30rem;
     margin-inline: auto;
     padding-inline: var(--space-4xl);
     padding-block: var(--space-4xl);

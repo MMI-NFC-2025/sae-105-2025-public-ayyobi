@@ -26,7 +26,7 @@
     right: 0;
     margin-inline: auto;
 
-    height: 2px;
+    height: 0.125rem;
     border-radius: 999px;
     background-color: var(--blanc);
 
@@ -139,8 +139,8 @@
 }
 
 .menu__social-icon {
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 /* Quand le menu est ouvert, on bloque le scroll derrière */

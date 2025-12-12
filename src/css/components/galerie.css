@@ -3,7 +3,7 @@
 ====================================== */
 
 .artist-page__gallery {
-    max-width: 480px;
+    max-width: 30rem;
     margin-inline: auto;
     padding-inline: var(--space-4xl);
     padding-bottom: var(--space-4xl);
@@ -21,13 +21,13 @@
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .artist-gallery__item:hover {
     transform: scale(1.02);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.3);
 }
 
 /* Image de la galerie */
@@ -36,7 +36,7 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     transition: filter 0.3s ease;
 }
 
@@ -81,7 +81,7 @@
 .lightbox__img {
     max-width: 100%;
     max-height: 100%;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     object-fit: contain;
     animation: zoomIn 0.3s ease;
 }
@@ -106,8 +106,8 @@
     color: var(--blanc);
     font-size: calc(var(--text_2xl) * 1px);
     cursor: pointer;
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,7 +117,7 @@
 }
 
 .lightbox__close:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--blanc-opaque-light);
 }
 
 .lightbox__nav {
@@ -129,8 +129,8 @@
     color: var(--blanc);
     font-size: calc(var(--text_3xl) * 1px);
     cursor: pointer;
-    width: 56px;
-    height: 56px;
+    width: 3.5rem;
+    height: 3.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,7 +140,7 @@
 }
 
 .lightbox__nav:hover {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: var(--blanc-opaque-very-light);
 }
 
 .lightbox__nav--prev {
@@ -156,9 +156,9 @@
     bottom: var(--space-3xl);
     left: 50%;
     transform: translateX(-50%);
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--blanc-opaque-dark);
     font-size: calc(var(--text_sm) * 1px);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--noir-opaque-medium);
     padding: var(--space-2xl) var(--space-3xl);
     border-radius: 999px;
     z-index: 10001;
@@ -167,8 +167,8 @@
 @media (max-width: 768px) {
     .lightbox__close,
     .lightbox__nav {
-        width: 44px;
-        height: 44px;
+        width: 2.75rem;
+        height: 2.75rem;
         font-size: calc(var(--text_xl) * 1px);
     }
 

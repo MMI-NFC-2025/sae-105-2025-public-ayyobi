@@ -4,8 +4,27 @@
         --Rouge: #7a1511;
         --Rougevif: #da261c;
         --Bleulectrique: #0c1e5b;
+        --Bleu-gradient: #182b7a;
         --Noirbleunuit: #030624;
         --blanc: #ffffff;
+        --Orange: #fa5749;
+        
+        /* Variantes avec opacité */
+        --noir-opaque-dark: #02051f;
+        --noir-opaque-medium: rgba(0, 0, 0, 0.5);
+        --noir-opaque-heavy: rgba(0, 0, 0, 0.9);
+        --noir-opaque-light: rgba(0, 0, 0, 0.3);
+        --noir-opaque-ultra-light: rgba(0, 0, 0, 0.03);
+        
+        --blanc-opaque-light: rgba(255, 255, 255, 0.1);
+        --blanc-opaque-medium: rgba(255, 255, 255, 0.4);
+        --blanc-opaque-heavy: rgba(255, 255, 255, 0.9);
+        --blanc-opaque-ultra-light: rgba(255, 255, 255, 0.02);
+        --blanc-opaque-very-light: rgba(255, 255, 255, 0.15);
+        --blanc-opaque-dark: rgba(255, 255, 255, 0.8);
+        
+        --orange-opaque: rgba(250, 87, 73, 0.4);
+        --orange-opaque-light: rgba(250, 87, 73, 0.18);
     
     /* Tailles de texte */
         --text_sm: 14;

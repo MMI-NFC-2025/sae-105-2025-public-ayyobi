@@ -4,7 +4,7 @@
 
 .heb {
     margin-bottom: var(--space-4xl);
-    border-radius: 4px;
+    border-radius: 0.25rem;
     overflow: hidden;
     background-color: var(--Bleulectrique);
 }
@@ -25,7 +25,7 @@
 .heb__img {
     display: block;
     width: 100%;
-    height: 180px;
+    height: 11.25rem;
     object-fit: cover;
 }
 
@@ -39,7 +39,7 @@
 
 .heb__label {
     left: 0;
-    right: 56px;
+    right: 3.5rem;
     padding-inline: var(--space-3xl);
     font-size: calc(var(--text_sm) * 1px);
     font-weight: 600;
@@ -51,7 +51,7 @@
 
 .heb__icon {
     right: 0;
-    width: 56px;
+    width: 3.5rem;
     text-align: center;
     background: linear-gradient(to top,
             rgba(0, 0, 0, 0.9) 0%,
@@ -71,7 +71,7 @@
     padding-inline: var(--space-3xl);
     font-size: calc(var(--text_sm) * 1px);
     line-height: 1.6;
-    background-color: #02051f;
+    background-color: var(--noir-opaque-dark);
 
     max-height: 0;
     opacity: 0;

@@ -9,7 +9,7 @@
     justify-content: space-between;
     gap: var(--space-4xl);
     background-image:url('../../../assets/img/bg-footer.avif');
-    background-color: linear-gradient(180deg, var(--Rouge, #7A1511) 0%, #1940C1 100%);
+    background: linear-gradient(180deg, var(--Rouge) 0%, var(--Bleulectrique) 100%);
     background-size:cover;
     background-position:center;
     padding: var(--space-4xl);
@@ -54,12 +54,12 @@
     font-size: calc(var(--text_sm) * 1px);
     transition: color 0.3s ease, text-shadow 0.3s ease;
     position: relative;
-    padding-bottom: 4px;
+    padding-bottom: 0.25rem;
 }
 
 .footer__link:hover {
     color: var(--Rougevif);
-    text-shadow: 0 0 8px rgba(250, 87, 73, 0.4);
+    text-shadow: 0 0 0.5rem var(--orange-opaque);
 }
 
 .footer__link::after {
@@ -68,7 +68,7 @@
     bottom: 0;
     left: 0;
     width: 0;
-    height: 2px;
+    height: 0.125rem;
     background-color: var(--Rougevif);
     transition: width 0.3s ease;
 }
@@ -88,7 +88,7 @@
     font-size: calc(var(--text_base) * 1px);
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.03125rem;
     margin: 0 0 var(--space-2xl) 0;
 }
 
